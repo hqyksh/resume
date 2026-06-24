@@ -1,0 +1,241 @@
+[
+    {
+      "id": 8,
+      "logo": "/company/dlkf.png",
+      "title": "独立应用开发",
+      "job": "全栈开发",
+      "time": "2025/01",
+      "industry": "网络工具/在线服务",
+      "skill": [
+      {
+        "icon": "/icons/nodejs-original.svg",
+        "name": "Node.js"
+      },
+      {
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+      {
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			}
+      ],
+      "task": "",
+      "link": "dlkf",
+      "pics": ["/company/dlkf.png"]
+    },
+    {
+      "id": 1,
+      "logo": "/company/18.jpeg",
+      "title": "成都华栖云科技有限公司",
+      "job": "高级web前端工程师",
+      "time": "2022/07",
+      "industry": "媒体云/大数据服务",
+      "skill": [
+      {
+        "icon": "/icons/vuejs-original.svg",
+        "name": "Vue2"
+      },
+      {
+        "icon": "/icons/react-original.svg",
+        "name": "React"
+      },
+      {
+        "icon": "/icons/nodejs-original.svg",
+        "name": "Node.js"
+      },
+      {
+        "icon": "/icons/LogosPinia.svg",
+        "name": "Pinia"
+      },
+      {
+        "icon": "/icons/css3-original.svg",
+        "name": "CSS3"
+      },
+      {
+        "icon": "/icons/hqylogo.jpeg",
+        "name": "Lowcode site builder"
+      }
+      ],
+      "task": "",
+      "link": "hqy",
+      "pics": ["/company/18.jpeg", "/company/1.jpeg", "/company/17.jpeg", "/company/hqylogo.jpeg"]
+    },
+    {
+      "id": 2,
+      "logo": "/company/8.jpeg",
+      "title": "优客逸家(成都)信息科技有限公司",
+      "job": "web前端工程师",
+      "time": "2016/05",
+      "industry": "互联网+住房租赁",
+      "skill": [
+      {
+        "icon": "/icons/vuejs-original.svg",
+        "name": "Vue2"
+      },
+      {
+        "icon": "/icons/react-original.svg",
+        "name": "React"
+      },
+      {
+        "icon": "/icons/LogosAntDesign.svg",
+        "name": "Ant Design"
+      },
+      {
+        "icon": "/icons/LogosJquery.svg",
+        "name": "jQuery"
+      },
+      {
+        "icon": "/icons/bootstrap-original.svg",
+        "name": "bootstrap"
+      },
+      {
+        "icon": "/icons/LogosElementalUi.svg",
+        "name": "Element UI"
+      },
+      {
+        "icon": "/icons/typescript-original.svg",
+        "name": "TypeScript"
+      },
+      {
+        "icon": "/icons/LogosLess.svg",
+        "name": "Less"
+      },
+      {
+        "icon": "/icons/LogosHandlebars.svg",
+        "name": "Handlebars"
+      },
+      {
+        "icon": "/icons/mongodb-original.svg",
+        "name": "mongodb"
+      },
+      {
+        "icon": "/icons/LogosExpress.svg",
+        "name": "Express"
+      }
+      ],
+      "task": "",
+      "link": "ykyj",
+      "pics": [ "/company/2.jpeg", "/company/8.jpeg", "/company/7.jpeg","/company/10.jpeg"]
+    },
+    {
+      "id": 3,
+      "logo": "/company/15.jpeg",
+      "title": "TCL通讯科技(成都)有限公司",
+      "job": "FirefoxOS软件工程师",
+      "time": "2014/04",
+      "industry": "基础软件开发/嵌入式系统软件开发",
+      "skill": [
+      {
+        "icon": "/icons/LogosBash.svg",
+        "name": "shell"
+      },
+      {
+        "icon": "/icons/LogosPython.svg",
+        "name": "python"
+      },
+      {
+        "icon": "/icons/html5-original.svg",
+        "name": "html5"
+      },
+      {
+        "icon": "/icons/backbonejs-original.svg",
+        "name": "BackBone.js"
+      },
+      {
+        "icon": "/icons/jenkins.jpeg",
+        "name": "jenkins"
+      },
+      {
+        "icon": "/icons/empty.svg",
+        "name": "bugzilla"
+      },
+      {
+        "icon": "/icons/empty.svg",
+        "name": "gerrit"
+      },
+      {
+        "icon": "/icons/empty.svg",
+        "name": "repo"
+      }
+      ],
+      "task": "",
+      "link": "tcl",
+      "pics": ["/company/15.jpeg", "/company/11.jpeg", "/company/21.jpeg", "/company/13.jpeg", "/company/14.jpeg" ]
+    },
+    {
+      "id": 4,
+      "logo": "/company/6.jpeg",
+      "title": "成都索贝数码科技股份有限公司",
+      "job": "web前端开发",
+      "time": "2012/08",
+      "industry": "专业媒体技术解决方案",
+      "skill": [
+      {
+        "icon": "/icons/LogosJquery.svg",
+        "name": "jQuery"
+      },
+      {
+        "icon": "/icons/cmstop.jpeg",
+        "name": "CmsTop"
+      },
+      {
+        "icon": "/icons/IETester.jpeg",
+        "name": "IETester"
+      },
+      {
+        "icon": "/icons/empty.svg",
+        "name": "fixPng"
+      }
+      ],
+      "task": "",
+      "link": "sobey",
+      "pics": ["/company/6.jpeg", "/company/5.jpeg", "/company/4.jpeg"]
+    },
+    {
+      "id": 5,
+      "logo": "/icons/empty1.svg",
+      "title": "成都力天电子商务有限公司",
+      "job": "网页设计与制作",
+      "time": "2011",
+      "industry": "电子商务线上零售",
+      "skill": [
+      {
+        "icon": "/icons/LogosJquery.svg",
+        "name": "jQuery"
+      },
+      {
+        "icon": "/icons/LogosAdobePhotoshop.svg",
+        "name": "Photoshop"
+      },
+      {
+        "icon": "/icons/LogosAdobeDreamweaver.svg",
+        "name": "Dreamweaver"
+      }
+      ],
+      "task": "",
+      "link": "ltdz",
+      "pics": ["/icons/empty1.svg"]
+    },
+    {
+      "id": 6,
+      "logo": "/icons/empty1.svg",
+      "title": "北京迅捷英翔网络科技有限公司",
+      "job": "网站美工",
+      "time": "2010",
+      "industry": "中国移动咪咕音乐增值电信服务",
+      "skill": [
+      {
+        "icon": "/icons/LogosAdobePhotoshop.svg",
+        "name": "Photoshop"
+      }
+      ],
+      "task": "",
+      "link": "xjyx",
+      "pics": ["/company/19.jpeg", "/company/16.jpeg"]
+    }
+  ]

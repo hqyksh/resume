@@ -1,0 +1,223 @@
+[
+	{
+		"programming": [
+			{
+				"icon": "/icons/html5-original.svg",
+				"name": "html5"
+			},
+			{
+				"icon": "/icons/css3-original.svg",
+				"name": "CSS3"
+			},
+			{
+				"icon": "/icons/javascript-original.svg",
+				"name": "Javascript"
+			},
+			{
+				"icon": "/icons/typescript-original.svg",
+				"name": "TypeScript"
+			},
+			{
+				"icon": "/icons/LogosPython.svg",
+				"name": "python"
+			},
+			{
+				"icon": "/icons/LogosBash.svg",
+				"name": "shell"
+			}
+		],
+		"framework": [
+			{
+				"icon": "/icons/react-original.svg",
+				"name": "React"
+			},
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/LogosAntDesign.svg",
+				"name": "AntDesign"
+			},
+			{
+				"icon": "/icons/nextjs-original.svg",
+				"name": "nextjs"
+			},
+			{
+				"icon": "/icons/tailwindcss-original.svg",
+				"name": "tailwindcss"
+			},
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/bootstrap-original.svg",
+				"name": "bootstrap"
+			},
+			{
+				"icon": "/icons/ElementUI.png",
+				"name": "ElementUI"
+			},
+			{
+				"icon": "/icons/sass-original.svg",
+				"name": "sass"
+			},
+			{
+				"icon": "/icons/LogosLess.svg",
+				"name": "Less"
+			},
+			{
+				"icon": "/icons/LogosJquery.svg",
+				"name": "jQuery"
+			},
+			{
+				"icon": "/icons/LogosPinia.svg",
+				"name": "Pinia"
+			},
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue3"
+			},
+			{
+				"icon": "/icons/backbonejs-original.svg",
+				"name": "BackBone.js"
+			},
+			{
+				"icon": "/icons/LogosHandlebars.svg",
+				"name": "Handlebars"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/prisma-original.svg",
+				"name": "prisma"
+			},
+			{
+				"icon": "/icons/LogosZod.svg",
+				"name": "Zod"
+			},
+			{
+				"icon": "/icons/wordpress-original.svg",
+				"name": "wordpress"
+			},
+			{
+				"icon": "/icons/hqylogo.jpeg",
+				"name": "Lowcode site builder"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			}
+		],
+		"tools": [
+			{
+				"icon": "/icons/LogosDockerIcon.svg",
+				"name": "Docker"
+			},
+			{
+				"icon": "/icons/LogosAws.svg",
+				"name": "AWS"
+			},
+			{
+				"icon": "/icons/LogosVitejs.svg",
+				"name": "Vite"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/supabase-original.svg",
+				"name": "supabase"
+			},
+			{
+				"icon": "/icons/LogosPostman.svg",
+				"name": "Postman"
+			},
+			{
+				"icon": "/icons/LogosNpm.svg",
+				"name": "Npm"
+			},
+			{
+				"icon": "/icons/LogosLinuxTux.svg",
+				"name": "Linux"
+			},
+			{
+				"icon": "/icons/vscode-original.svg",
+				"name": "vscode"
+			},
+			{
+				"icon": "/icons/LogosSublimetextIcon.svg",
+				"name": "Sublime"
+			},
+			{
+				"icon": "/icons/git-original.svg",
+				"name": "git"
+			},
+			{
+				"icon": "/icons/LogosAdobePhotoshop.svg",
+				"name": "Photoshop"
+			},
+			{
+				"icon": "/icons/LogosAdobeDreamweaver.svg",
+				"name": "Dreamweaver"
+			},
+			{
+				"icon": "/icons/cmstop.jpeg",
+				"name": "CmsTop"
+			},
+			{
+				"icon": "/icons/IETester.jpeg",
+				"name": "IETester"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "fixPng"
+			},
+			{
+				"icon": "/icons/LogosNginx.svg",
+				"name": "Nginx"
+			},
+			{
+				"icon": "/icons/jenkins.jpeg",
+				"name": "jenkins"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "bugzilla"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "gerrit"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "repo"
+			},
+			{
+				"icon": "/icons/mongodb-original.svg",
+				"name": "mongodb"
+			},
+			
+			{
+				"icon": "/icons/LogosMeilisearch.svg",
+				"name": "Meilisearch"
+			},
+			{
+				"icon": "/icons/LogosRedis.svg",
+				"name": "Redis"
+			},
+			{
+				"icon": "/icons/LogosRabbitmqIcon.svg",
+				"name": "Rabbitmq"
+			}
+		]
+	}
+]

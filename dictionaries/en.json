@@ -1,0 +1,98 @@
+{
+  "home": {
+    "header": {
+      "name": "Eric Zhou",
+      "usp": "Full Stack AI Agent Developer"
+    },
+    "intro": {
+      "start": "Before, I focused on UX and FED.",
+      "end": "Now, diving in AI Agent & full-stack development.",
+      "speed": 60,
+      "deletionSpeed": 80,
+      "wrapper": "h2",
+      "startDelay": 1000,
+      "deleteDelay": 3000,
+      "restartDelay": 12000
+    },
+    "paragraph": "Full-stack TypeScript engineer. React/Vue, Node.js, Express, Next.js, and Node.js AI Agent development. Track record of shipping mini-programs, H5, Web, and enterprise management systems from scratch to scale.",
+
+    "buttons": {
+      "primary": "Contact Me",
+      "secondary": "Download CV"
+    },
+
+    "title": "Stack Used",
+    "preTitle": "Tools, Platform & Lanuage",
+    "subTitle": "Focused on user experience and dedicated to Node.js full-stack engineering.",
+    "title1": "Blog List",
+    "subTitle1": "Historical WP blog, using Supabase for data storage.",
+    "project": "Recently Project",
+		"descriptionTitle": "Visual low-code site builder",
+    "programmingTitle": "Programming Languages",
+    "frameworkTitle": "Framework / Libraries",
+    "toolsTitle": "Tools & Technologies"
+  },
+  "education": {
+    "subTitle": "Sichuan Agricultural University | Sep 2006 – Jun 2010  Bachelor’s Degree, E-Commerce.",
+    "description": "Sichuan Agricultural University (SAU), or “Chuan Nong Da” for short, is co-sponsored by the Ministry of Education of the PRC and the People’s Government of Sichuan Province. It is listed in the “Double First-Class” initiative and the “211 Project” and is renowned for its distinct disciplines and agricultural strengths. The university’s Department of Computer Science, supported by platforms such as the “Agricultural Information Engineering Laboratory”, focuses its teaching and research on smart agriculture, agricultural big-data and digital-village development, forging an interdisciplinary edge that combines computing technologies with agricultural applications.",
+    "certificate": "Certificate Awarded",
+    "certificateItem": [
+      "Bachelor’s Degree Certificate.",
+      "Undergraduate Graduation Certificate."
+    ]
+  },
+  "project": {
+    "subTitle": "Project types include business management systems, h5, web, wechat mini programs, low-code site builder.",
+    "job": "Responsibilities",
+    "result": "Achievements",
+    "skill": "Skills & Tools"
+  },
+  "experience": {
+    "subTitle": "Extensive experience in the internet industry, with a focus on internet information services.",
+    "buttons": {
+      "detail": "Visit Detail"
+    }
+  },
+  "experienceDetail": {
+    "subTitle": "Common Technologies",
+    "subTitle1": "Skills & Tools",
+    "buttons": {
+      "detail": "Visit Project"
+    }
+  },
+  "blog": {
+    "subTitle": "Data comes from a blog previously built with WordPress and was later imported into Supabase's online database; it is now fetched via the Supabase SDK. Make full-text search faster and more efficient through Elasticsearch.",
+    "buttons": {
+      "detail": "Visit Detail",
+      "search": "search",
+      "result": "No Result",
+      "pre": "Previous",
+      "next": "Next"
+    }
+  },
+  "footer": {
+    "copyright": "All right reserved"
+  },
+  "navLink": [
+    {
+      "title": "Home",
+      "path": "/"
+    },
+    {
+      "title": "Education",
+      "path": "/education"
+    },
+    {
+      "title": "Experience",
+      "path": "/experience"
+    },
+    {
+      "title": "Project",
+      "path": "/project"
+    },
+    {
+      "title": "Blog",
+      "path": "/blog"
+    }
+  ]
+}

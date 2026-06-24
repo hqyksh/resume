@@ -1,0 +1,16 @@
+// import 'server-only'
+ 
+const dictionaries = {
+  en: () => import('./en.json').then((module) => module.default),
+  zh: () => import('./zh.json').then((module) => module.default),
+}
+ 
+export const getDictionary = async (locale: 'en' | 'zh') => {
+  const dictionaryFunction = dictionaries[locale];
+  if (dictionaryFunction) {
+    return dictionaryFunction();
+  } else {
+    return dictionaries['en']();
+  }
+}
+  

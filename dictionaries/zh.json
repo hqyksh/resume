@@ -1,0 +1,98 @@
+{
+  "home": {
+    "header": {
+     "name": "Eric Zhou",
+     "usp": "Node.js全栈开发工程师"
+    },
+    "intro": {
+      "start": "Before, I focused on UX and FED.",
+      "end": "Now, I am passionate about AI Agent & full-stack development.",
+      "speed": 60,
+      "deletionSpeed": 80,
+      "wrapper": "h2",
+      "startDelay": 1000,
+      "deleteDelay": 3000,
+      "restartDelay": 12000
+    },
+    "paragraph": "高级 JS/TS 全栈工程师，精通 Vue/React 前端及 Node.js/Express/next.js 后端开发，能从 0 到 1 独立交付产品。精通微信小程序、H5、Web、企业管理系统开发。掌握AI Agent开发。具备快速学习和问题解决能力。",
+
+    "buttons": {
+      "primary": "邮件联系",
+      "secondary": "下载简历"
+    },
+
+    "title": "技术栈",
+    "preTitle": "技术工具与语言",
+    "subTitle": "专注于体验，专注Node.js全栈工程。",
+    "title1": "博客列表",
+    "subTitle1": "历史WP博客，使用supabase存储数据。",
+    "project": "最近项目",
+		"descriptionTitle": "可视化低代码开发平台",
+    "programmingTitle": "编程语言",
+    "frameworkTitle": "框架 / 库",
+    "toolsTitle": "工具 & 技术"
+  },
+  "education": {
+    "subTitle": "四川农业大学 2006/9-2010/6 电子商务 211统招本科",
+    "description": "四川农业大学（Sichuan Agricultural University），简称“川农大”，由中华人民共和国教育部与四川省人民政府共建，位列“双一流”、“211工程”；特色突出，专业显著。学校计算机系依托“农业信息工程实验室”等平台，围绕智慧农业、农业大数据、数字乡村等方向开展教学科研，形成了“计算机+农业”交叉优势。",
+    "certificate": "获得证书",
+    "certificateItem": [
+      "学士学位证书。",
+      "本科毕业证书。"
+    ]
+  },
+  "project": {
+    "subTitle": "做过的前端/全栈项目。包括企业管理系统，H5， web，小程序，低代码开发平台，开发框架等。",
+    "job": "项目职责",
+    "result": "项目业绩",
+    "skill": "技能与工具"
+  },
+  "experience": {
+    "subTitle": "在互联网公司工作，公司主要是互联网信息服务。",
+    "buttons": {
+      "detail": "查看详情"
+    }
+  },
+  "experienceDetail": {
+    "subTitle": "常用技术",
+    "subTitle1": "技能与工具",
+    "buttons": {
+      "detail": "查看项目"
+    }
+  },
+  "blog": {
+    "subTitle": "数据来自之前用wordpress搭建的博客，一些浅显的文章。然后倒入supabase在线数据库。通过supabase SDK调用数据。通过ElasticSearch全文检索提高效率。（以下 258 篇博客展示）",
+    "buttons": {
+      "detail": "查看详情",
+      "search": "搜索",
+      "result": "未找到内容",
+      "pre": "上一页",
+      "next": "下一页"
+    }
+  },
+  "footer": {
+    "copyright": "保留所有权利"
+  },
+  "navLink": [
+    {
+      "title": "首页",
+      "path": "/"
+    },
+    {
+      "title": "教育经历",
+      "path": "/education"
+    },
+    {
+      "title": "工作经历",
+      "path": "/experience"
+    },
+    {
+      "title": "项目经历",
+      "path": "/project"
+    },
+    {
+      "title": "博客",
+      "path": "/blog"
+    }
+  ]
+}

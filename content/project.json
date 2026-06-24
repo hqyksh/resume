@@ -1,0 +1,726 @@
+[
+	{
+		"time": "2025年",
+		"title": "Portfolio独立站开发",
+		"company": "独立全栈开发",
+		"description": "使用Next.js全栈，Supabase云数据库，AWS云服务器部署搭建的响应式网站。",
+		"zhize": [
+			"站点栏目包括个人介绍，博客记录等。",
+			"提供Tailwindcss响应式模式。",
+			"提供主题色切换功能。",
+			"提供多语言切换功能。"
+		],
+		"result": [],
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/nextjs-original.svg",
+				"name": "nextjs"
+			},
+			{
+				"icon": "/icons/supabase-original.svg",
+				"name": "supabase"
+			},
+			{
+				"icon": "/icons/tailwindcss-original.svg",
+				"name": "tailwindcss"
+			},
+			{
+				"icon": "/icons/typescript-original.svg",
+				"name": "TypeScript"
+			},
+			{
+				"icon": "/icons/LogosAws.svg",
+				"name": "AWS"
+			},
+			{
+				"icon": "/icons/LogosNginx.svg",
+				"name": "Nginx"
+			},
+			{
+				"icon": "/icons/LogosMeilisearch.svg",
+				"name": "Meilisearch"
+			}
+		],
+		"linkId": "dlkf"
+	},
+	{
+		"time": "2025年",
+		"title": "团建分账小程序“团建分账大师“",
+		"company": "独立全栈开发",
+		"description": "使用Express作后端，微信小程序，腾讯云部署搭建。解决团队活动（如旅游）记账分账问题。",
+		"zhize": [
+			"除了平均分账，还提供4种特殊的分账方式满足实际情况。",
+			"队员可以随时查看消费记录，让每个人清楚地掌握自己的消费数据。",
+			"提供活动发布及邀请等流程功能。",
+			"提供自定义账单类型功能。",
+			"提供数据统计功能。",
+			"提供AI搜索建议功能等，高德地图POI信息检索功能，地图规划功能等，根据天气查询天气建议功能；结合大语言模型（glm-4），实现了行程规划、景点美食推荐、天气查询、智能对话等功能。"
+		],
+		"result": [],
+		"images": [
+			"/project/lyjh (12).jpg",
+			"/project/lyjh (1).jpg",
+			"/project/lyjh (2).jpg",
+			"/project/lyjh (3).jpg",
+			"/project/lyjh (4).jpg",
+			"/project/lyjh (5).jpg",
+			"/project/lyjh (6).jpg",
+			"/project/lyjh (7).jpg",
+			"/project/lyjh (8).jpg",
+			"/project/lyjh (9).jpg",
+			"/project/lyjh (10).jpg",
+			"/project/lyjh (11).jpg",
+			"/project/lyjh (13).jpg",
+			"/project/lyjh (14).jpg",
+			"/project/lyjh (15).jpg",
+			"/project/lyjh (16).jpg",
+			"/project/lyjh (17).jpg",
+			"/project/lyjh-langchain (1).png",
+			"/project/lyjh-langchain (2).png",
+			"/project/lyjh-langchain (3).png",
+			"/project/lyjh-langchain (4).png"
+		],
+		"stack": [
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/tencent.svg",
+				"name": "腾讯云"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "LangChain"
+			},
+			{
+				"icon": "/icons/LogosRedis.svg",
+				"name": "Redis"
+			},
+			{
+				"icon": "/icons/LogosDockerIcon.svg",
+				"name": "Docker"
+			},
+			{
+				"icon": "/icons/LogosNginx.svg",
+				"name": "Nginx"
+			}
+		]
+	},
+	{
+		"time": "2025年",
+		"title": "vben-admin 后台开发框架 - Express版本",
+		"company": "独立全栈开发",
+		"description": "使用vben-admin antd作为前端，Express作为后端的开发框架。",
+		"zhize": [
+			"支持RBAC角色权限控制",
+			"支持部门管理等",
+			"提供用户管理功能。",
+			"支持菜单管理功能。",
+			"字典管理功能"
+		],
+		"result": [],
+		"images": [
+			"/project/vben-admin (3).png",
+			"/project/vben-admin (4).png",
+			"/project/vben-admin (1).png",
+			"/project/vben-admin (2).png",
+			"/project/vben-admin (4).jpeg",
+			"/project/vben-admin (5).png",
+			"/project/vben-admin (1).jpeg",
+			"/project/vben-admin (2).jpeg"
+		],
+		"stack": [
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "vben-admin"
+			}
+		]
+	},
+	{
+		"time": "2025年",
+		"title": "订阅支付SDK",
+		"company": "独立全栈开发",
+		"description": "支持小程序端和pc端订阅支付功能",
+		"zhize": [
+			"自定义订阅内容",
+			"支持登录微信支付"
+		],
+		"result": [],
+		"images": [
+			"/project/paysdk (1).jpeg",
+			"/project/paysdk (2).jpeg",
+			"/project/paysdk-m (1).png",
+			"/project/paysdk-m (2).png"
+		],
+		"stack": [
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			}
+		]
+	},
+	{
+		"time": "2025年",
+		"title": "统一注册登录SDK",
+		"company": "独立全栈开发",
+		"description": "支持移动端和pc端注册登录功能",
+		"zhize": [
+			"支持邮箱和微信扫码注册登录"
+		],
+		"result": [],
+		"images": [
+			"/project/login (1).jpeg",
+			"/project/login (2).jpeg",
+			"/project/login (3).jpeg",
+			"/project/login-m (1).png",
+			"/project/login-m (2).png"
+		],
+		"stack": [
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			}
+		]
+	},
+	{
+		"time": "2025年",
+		"title": "微信排队小程序独立开发",
+		"company": "独立全栈开发 / vibe coding",
+		"description": "使用Express以及微信小程序开发的应用。",
+		"zhize": [
+			"提供扫码排队功能。",
+			"提供管理员设置，叫号功能。",
+			"提供小程序消息提醒功能。"
+		],
+		"result": [],
+		"images": [
+			"/project/pdjh (2).png",
+			"/project/pdjh (1).png",
+			"/project/pdjh (3).png",
+			"/project/pdjh (4).png",
+			"/project/pdjh (6).png",
+			"/project/pdjh (7).png",
+			"/project/pdjh (8).png",
+			"/project/pdjh (9).png",
+			"/project/pdjh (10).png",
+			"/project/pdjh (11).png",
+			"/project/pdjh (12).png",
+			"/project/pdjh (13).png"
+		],
+		"stack": [
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			},
+			{
+				"icon": "/icons/LogosNginx.svg",
+				"name": "Nginx"
+			},
+			{
+				"icon": "/icons/LogosRedis.svg",
+				"name": "Redis"
+			}
+		]
+	},
+	{
+		"time": "2025年",
+		"title": "摆摊助手小程序独立开发",
+		"company": "独立全栈开发",
+		"description": "使用Express以及微信小程序开发的应用。",
+		"zhize": [
+			"提供产品管理功能。",
+			"提供购物车，销售记录功能。",
+			"提供地址管理功能。",
+			"提供销售统计分析功能。"
+		],
+		"result": [],
+		"images": [
+			"/project/ptzs (2).png",
+			"/project/ptzs (1).png",
+			"/project/ptzs (3).png",
+			"/project/ptzs (4).png",
+			"/project/ptzs (5).png",
+			"/project/ptzs (6).png",
+			"/project/ptzs (7).png"
+		],
+		"stack": [
+			{
+				"icon": "/icons/LogosExpress.svg",
+				"name": "Express"
+			},
+			{
+				"icon": "/icons/sequelize-original.svg",
+				"name": "sequelize"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/mysql-original.svg",
+				"name": "mysql"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			},
+			{
+				"icon": "/icons/LogosNginx.svg",
+				"name": "Nginx"
+			}
+		]
+	},
+	{
+		"time": "2022-2024年",
+		"title": "搭建低代码开发平台",
+		"company": "成都华栖云科技有限公司",
+		"url": "/experience/1",
+		"description": "项目使用Vue2开发的低代码，组件化，拖拽式网页生成平台。",
+		"zhize": [
+			"负责该平台的数据源功能，事件绑定功能，组件开发模板构建，自定义样式功能等；",
+			"实现多页面站点管理，页面静态化发布等；",
+			"负责基础组件如空组件，文本组件，多列组件，登录组件，代码组件等的开发。"
+		],
+		"result": [
+			"已获得低代码平台专利《一种基于数据源的低代码可视化方法》",
+			"申请低代码静态化发布功能专利《一种可视化低代码平台页面静态化实现方法》。",
+			"使cms内容站点前台开发周期缩减50%+。"
+		],
+		"images": [
+			"/project/9.jpg",
+			"/project/5.jpg",
+			"/project/6.jpg",
+			"/project/8.jpg"
+		],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/css3-original.svg",
+				"name": "CSS3"
+			}
+		],
+		"linkId": "hqy"
+	},
+	{
+		"time": "2023-2024年",
+		"title": "使用低代码开发平台开发项目",
+		"company": "成都华栖云科技有限公司",
+		"url": "/experience/1",
+		"description": "",
+		"zhize": [
+			"1、使用低代码平台快速搭建湖北日报4个pc端，4个移动端CMS站点。",
+			"2、使用低代码平台部署陕西党建网专题开发系统。",
+			"3、使用低代码平台搭建某海军新媒体中心pc端站点。后台一系列资源管理系统定制化修改。"
+		],
+		"result": [],
+		"images": [
+			"/project/1.jpg",
+			"/project/2.jpg",
+			"/project/3.jpg",
+			"/project/4.jpg",
+			"/project/7.jpg"
+		],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/hqylogo.jpeg",
+				"name": "Lowcode site builder"
+			},
+			{
+				"icon": "/icons/css3-original.svg",
+				"name": "CSS3"
+			},
+			{
+				"icon": "/icons/react-original.svg",
+				"name": "React"
+			}
+		]
+	},
+	{
+		"time": "2024年",
+		"title": "北京电视台新闻采编，任务分配，审核发布管理系统",
+		"company": "成都华栖云科技有限公司",
+		"url": "/experience/1",
+		"description": "基于小诺框架开发，新闻采编及任务进度管理系统。",
+		"zhize": "任务日历模式，任务脑图模式，任务新建，通义听悟语音会议记录，任务审核功能等。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue3"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "AntDesign-Vue"
+			}
+		]
+	},
+	{
+		"time": "2019年",
+		"title": "成都城投集团楼宇管理项目",
+		"company": "优客逸家(成都)信息科技有限公司",
+		"url": "/experience/2",
+		"description": "该项目是与成都城投集团合作开发项目，用于管理和运营旗下物业资产。",
+		"zhize": "招商中心，设置中心，用户中心模块开发；",
+		"result": "",
+		"images": [
+			"/project/yk (3).jpg",
+			"/project/yk (4).jpg",
+			"/project/yk (5).jpg"
+		],
+		"stack": [
+			{
+				"icon": "/icons/react-original.svg",
+				"name": "React"
+			},
+			{
+				"icon": "/icons/LogosAntDesign.svg",
+				"name": "AntDesign"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "redux-thunk"
+			}
+		],
+		"linkId": "ykyj"
+	},
+	{
+		"time": "2020-2021年",
+		"title": "物业好房项目",
+		"company": "优客逸家(成都)信息科技有限公司",
+		"url": "/experience/2",
+		"description": "该项目是帮助物业公司开展线上租房、售房业务的平台。可独立上架管理房源，获得独立主页，用户问答，聊天等。",
+		"zhize": "2个C端小程序开发：问答咨询模块，登录授权模块，广告模块等，小程序消息订阅，分享二维码功能等。房源信息，房间信息，访客信息，钥匙信息，发布信息等模块开发。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/ElementUI.png",
+				"name": "ElementUI"
+			},
+			{
+				"icon": "/icons/typescript-original.svg",
+				"name": "TypeScript"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			}
+		]
+	},
+	{
+		"time": "2021年",
+		"title": "快递柜小程序“优客里邻”项目 ",
+		"company": "优客逸家(成都)信息科技有限公司",
+		"url": "/experience/2",
+		"description": "该项目是为看房提供钥匙等存储管理服务，具有物联网特点的快递柜项目。",
+		"zhize": "独立搭建项目并完成开发；扫码，取件，存件，转借，授权登录，分享授权开锁，存取记录等。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/ElementUI.png",
+				"name": "ElementUI"
+			},
+			{
+				"icon": "/icons/typescript-original.svg",
+				"name": "TypeScript"
+			},
+			{
+				"icon": "/icons/wechat.jpeg",
+				"name": "Wechat miniprogram"
+			}
+		]
+	},
+	{
+		"time": "2017年",
+		"title": "搭建与开发移动端H5项目",
+		"company": "优客逸家(成都)信息科技有限公司",
+		"url": "/experience/2",
+		"description": "为租客找房、租房、租住管理、账单管理支付等提供移动端服务。",
+		"zhize": "重点开发地图，详情，账单等功能。",
+		"result": "评为公司2017年度优秀员工（IT部前5%）。",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "flexible"
+			}
+		]
+	},
+	{
+		"time": "2018年",
+		"title": "SPA框架重构老项目",
+		"company": "优客逸家(成都)信息科技有限公司",
+		"url": "/experience/2",
+		"description": "利用Vue2开发框架重构用jQuery开发的有客系统，合伙人系统。",
+		"zhize": "",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/ElementUI.png",
+				"name": "ElementUI"
+			},
+			{
+				"icon": "/icons/typescript-original.svg",
+				"name": "TypeScript"
+			}
+		]
+	},
+	{
+		"time": "2016-2019年",
+		"title": "有客管理系统，合伙人管理系统，运营中台系统项目",
+		"company": "优客逸家(成都)信息科技有限公司",
+		"url": "/experience/2",
+		"description": "这几个系统是公司业务开展的核心系统。提供房屋管理，合同管理，租客管理，住房资产管理，账单管理，合伙人管理，服务管理，运营管理，权限管理等核心线上化流程。",
+		"zhize": "负责合伙人系统和有客系统的需求开发与维护。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/LogosJquery.svg",
+				"name": "jQuery"
+			},
+			{
+				"icon": "/icons/ElementUI.png",
+				"name": "ElementUI"
+			},
+			{
+				"icon": "/icons/bootstrap-original.svg",
+				"name": "bootstrap"
+			}
+		]
+	},
+	{
+		"time": "2015年",
+		"title": "One Touch项目",
+		"company": "TCL通讯科技(成都)有限公司",
+		"url": "/experience/3",
+		"description": "项目是为美国提供的手机ALCATEL ONE TOUCH安卓版本。",
+		"zhize": "负责CI/CD，为开发和测试提供版本发布、流程自动化。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/LogosBash.svg",
+				"name": "shell"
+			},
+			{
+				"icon": "/icons/LogosPython.svg",
+				"name": "python"
+			},
+			{
+				"icon": "/icons/jenkins.jpeg",
+				"name": "jenkins"
+			},
+			{
+				"icon": "/icons/bugzilla.svg",
+				"name": "bugzilla"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "repo"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "gerrit"
+			}
+		],
+		"linkId": "tcl"
+	},
+	{
+		"time": "2014年",
+		"title": "FirefoxOS项目",
+		"company": "TCL通讯科技(成都)有限公司",
+		"url": "/experience/3",
+		"description": "项目是ALCATEL ONE TOUCH手机的FirefoxOS版本。FirefoxOS的webApp是基于javascript开发实现。",
+		"zhize": "负责webApp：邮件、联系人、开机ftu新功能开发和bugfix；",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/html5-original.svg",
+				"name": "html5"
+			},
+			{
+				"icon": "/icons/css3-original.svg",
+				"name": "CSS3"
+			},
+			{
+				"icon": "/icons/backbonejs-original.svg",
+				"name": "BackBone.js"
+			}
+		]
+	},
+	{
+		"time": "2013年",
+		"title": "哈尔滨网络电视台网站项目 ",
+		"company": "成都索贝数码科技股份有限公司",
+		"url": "/experience/4",
+		"description": "",
+		"zhize": "独立完成网站前端页面的开发与CMS后台模板的嵌套。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/LogosJquery.svg",
+				"name": "jQuery"
+			},
+			{
+				"icon": "/icons/cmstop.jpeg",
+				"name": "CmsTop"
+			},
+			{
+				"icon": "/icons/IETester.jpeg",
+				"name": "IETester"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "fixPng"
+			}
+		],
+		"linkId": "sobey"
+	},
+	{
+		"time": "2012",
+		"title": "vms管理系统，csp管理系统，bsp管理系统项目 ",
+		"company": "成都索贝数码科技股份有限公司",
+		"url": "/experience/4",
+		"description": "",
+		"zhize": "负责各种管理系统的后台模块开发。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/LogosJquery.svg",
+				"name": "jQuery"
+			},
+			{
+				"icon": "/icons/cmstop.jpeg",
+				"name": "CmsTop"
+			},
+			{
+				"icon": "/icons/IETester.jpeg",
+				"name": "IETester"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "fixPng"
+			}
+		]
+	}
+]
