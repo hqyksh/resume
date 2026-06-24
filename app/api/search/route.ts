@@ -4,11 +4,13 @@ import { MeiliSearch } from 'meilisearch';
 // 允许的索引白名单，防止用户枚举任意索引
 const ALLOWED_INDEXES = ['articles'];
 
-const meili = new MeiliSearch({
-  host: process.env.MEILISEARCH_HOST!,
-  apiKey: process.env.MEILISEARCH_API_KEY!,
-  timeout: 5000, // 5秒超时，避免长时间等待
-});
+function getMeiliClient() {
+  return new MeiliSearch({
+    host: process.env.MEILISEARCH_HOST!,
+    apiKey: process.env.MEILISEARCH_API_KEY!,
+    timeout: 5000,
+  });
+}
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -42,7 +44,7 @@ export async function GET(req: NextRequest) {
   const highlightPostTag = '</mark>';
 
   try {
-    const result = await meili
+    const result = await getMeiliClient()
       .index(index)
       .search(q, {
         offset,

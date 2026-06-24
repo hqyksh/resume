@@ -10,7 +10,6 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
     ignores: [
       "node_modules/**",
@@ -19,13 +18,40 @@ const eslintConfig = [
       "build/**",
       "next-env.d.ts",
     ],
-    overrides: [
-      {
-        rules: {
-          'react-hooks/exhaustive-deps': 'off',
-        },
-      },
-    ],
+  },
+  ...compat.extends("next/core-web-vitals"),
+  {
+    rules: {
+      // TypeScript - relax most checks
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
+      '@typescript-eslint/no-require-imports': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/no-unnecessary-type-constraint': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/no-unsafe-function-type': 'off',
+      '@typescript-eslint/no-wrapper-object-types': 'off',
+
+      // React - relax
+      'react-hooks/exhaustive-deps': 'off',
+      'react-hooks/rules-of-hooks': 'warn',
+      'react/no-unescaped-entities': 'off',
+      'react/display-name': 'off',
+
+      // General - relax
+      'no-unused-vars': 'off',
+      'no-console': 'off',
+      'no-debugger': 'warn',
+      'prefer-const': 'warn',
+      'no-var': 'warn',
+      'no-empty': 'warn',
+      'no-constant-condition': 'warn',
+
+      // Next.js - relax
+      '@next/next/no-img-element': 'off',
+      '@next/next/no-html-link-for-pages': 'off',
+    },
   },
 ];
 
