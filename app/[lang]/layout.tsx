@@ -37,7 +37,7 @@ export default async function RootLayout({
   const dict = await getDictionary(lang as 'en' | 'zh');
 
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

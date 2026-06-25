@@ -79,13 +79,15 @@ export default function ProjectDetailPage() {
             <CarouselItem key={index}>
               <Card>
                 <CardContent className="flex flex-col items-center justify-center p-0">
-                  <Image
-                    width={800}
-                    height={500}
-                    className='w-[100%] h-[280px] lg:h-[350px] object-contain object-center'
-                    src={item}
-                    alt=""
-                  />
+                  <div className="relative w-full h-[280px] lg:h-[350px]">
+                    <Image
+                      fill
+                      className='object-contain object-center'
+                      src={item}
+                      alt=""
+                      sizes="100vw"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </CarouselItem>
@@ -105,7 +107,7 @@ export default function ProjectDetailPage() {
             {item.icon ? <Image
               width={28}
               height={28}
-              className='md:w-8 h-8 mx-auto w-full'
+              className='w-8 h-8 mx-auto'
               src={item.icon}
               alt={item.name} /> : null}
             <p>{item.name}</p>
