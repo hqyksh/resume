@@ -5,10 +5,9 @@
 		"company": "独立全栈开发",
 		"description": "使用Next.js全栈，Supabase云数据库，AWS云服务器部署搭建的响应式网站。",
 		"zhize": [
-			"站点栏目包括个人介绍，博客记录等。",
-			"提供Tailwindcss响应式模式。",
-			"提供主题色切换功能。",
-			"提供多语言切换功能。"
+			"Tailwindcss响应式模式。",
+			"主题色切换功能。",
+			"多语言切换功能。"
 		],
 		"result": [],
 		"images": [],
@@ -50,36 +49,30 @@
 		"company": "独立全栈开发",
 		"description": "使用Express作后端，微信小程序，腾讯云部署搭建。解决团队活动（如旅游）记账分账问题。",
 		"zhize": [
-			"除了平均分账，还提供4种特殊的分账方式满足实际情况。",
+			"除平均分账，还4种特殊的分账方式满足实际情况。",
 			"队员可以随时查看消费记录，让每个人清楚地掌握自己的消费数据。",
-			"提供活动发布及邀请等流程功能。",
-			"提供自定义账单类型功能。",
-			"提供数据统计功能。",
-			"提供AI搜索建议功能等，高德地图POI信息检索功能，地图规划功能等，根据天气查询天气建议功能；结合大语言模型（glm-4），实现了行程规划、景点美食推荐、天气查询、智能对话等功能。"
+			"活动发布及邀请等流程功能。",
+			"自定义账单类型功能。",
+			"数据统计功能。",
+			"AI搜索建议功能等，高德地图POI信息检索功能，地图规划功能等，根据天气查询天气建议功能；结合大语言模型（glm-4），实现了行程规划、景点美食推荐、天气查询、智能对话等功能。"
 		],
 		"result": [],
 		"images": [
 			"/project/lyjh (12).jpg",
 			"/project/lyjh (1).jpg",
-			"/project/lyjh (2).jpg",
 			"/project/lyjh (3).jpg",
-			"/project/lyjh (4).jpg",
 			"/project/lyjh (5).jpg",
 			"/project/lyjh (6).jpg",
 			"/project/lyjh (7).jpg",
 			"/project/lyjh (8).jpg",
-			"/project/lyjh (9).jpg",
 			"/project/lyjh (10).jpg",
 			"/project/lyjh (11).jpg",
-			"/project/lyjh (13).jpg",
 			"/project/lyjh (14).jpg",
 			"/project/lyjh (15).jpg",
 			"/project/lyjh (16).jpg",
 			"/project/lyjh (17).jpg",
-			"/project/lyjh-langchain (1).png",
 			"/project/lyjh-langchain (2).png",
-			"/project/lyjh-langchain (3).png",
-			"/project/lyjh-langchain (4).png"
+			"/project/lyjh-langchain (3).png"
 		],
 		"stack": [
 			{
@@ -132,7 +125,7 @@
 		"zhize": [
 			"支持RBAC角色权限控制",
 			"支持部门管理等",
-			"提供用户管理功能。",
+			"用户管理功能。",
 			"支持菜单管理功能。",
 			"字典管理功能"
 		],
@@ -254,9 +247,9 @@
 		"company": "独立全栈开发 / vibe coding",
 		"description": "使用Express以及微信小程序开发的应用。",
 		"zhize": [
-			"提供扫码排队功能。",
-			"提供管理员设置，叫号功能。",
-			"提供小程序消息提醒功能。"
+			"扫码排队功能。",
+			"管理员设置，叫号功能。",
+			"小程序消息提醒功能。"
 		],
 		"result": [],
 		"images": [
@@ -310,10 +303,10 @@
 		"company": "独立全栈开发",
 		"description": "使用Express以及微信小程序开发的应用。",
 		"zhize": [
-			"提供产品管理功能。",
-			"提供购物车，销售记录功能。",
-			"提供地址管理功能。",
-			"提供销售统计分析功能。"
+			"产品管理功能。",
+			"购物车，销售记录功能。",
+			"地址管理功能。",
+			"销售统计分析功能。"
 		],
 		"result": [],
 		"images": [
@@ -510,7 +503,7 @@
 		"title": "快递柜小程序“优客里邻”项目 ",
 		"company": "优客逸家(成都)信息科技有限公司",
 		"url": "/experience/2",
-		"description": "该项目是为看房提供钥匙等存储管理服务，具有物联网特点的快递柜项目。",
+		"description": "该项目是为看房钥匙等存储管理服务，具有物联网特点的快递柜项目。",
 		"zhize": "独立搭建项目并完成开发；扫码，取件，存件，转借，授权登录，分享授权开锁，存取记录等。",
 		"result": "",
 		"images": [],
@@ -538,7 +531,7 @@
 		"title": "搭建与开发移动端H5项目",
 		"company": "优客逸家(成都)信息科技有限公司",
 		"url": "/experience/2",
-		"description": "为租客找房、租房、租住管理、账单管理支付等提供移动端服务。",
+		"description": "为租客找房、租房、租住管理、账单管理支付等移动端服务。",
 		"zhize": "重点开发地图，详情，账单等功能。",
 		"result": "评为公司2017年度优秀员工（IT部前5%）。",
 		"images": [],
@@ -582,7 +575,7 @@
 		"title": "有客管理系统，合伙人管理系统，运营中台系统项目",
 		"company": "优客逸家(成都)信息科技有限公司",
 		"url": "/experience/2",
-		"description": "这几个系统是公司业务开展的核心系统。提供房屋管理，合同管理，租客管理，住房资产管理，账单管理，合伙人管理，服务管理，运营管理，权限管理等核心线上化流程。",
+		"description": "这几个系统是公司业务开展的核心系统。房屋管理，合同管理，租客管理，住房资产管理，账单管理，合伙人管理，服务管理，运营管理，权限管理等核心线上化流程。",
 		"zhize": "负责合伙人系统和有客系统的需求开发与维护。",
 		"result": "",
 		"images": [],
@@ -610,8 +603,8 @@
 		"title": "One Touch项目",
 		"company": "TCL通讯科技(成都)有限公司",
 		"url": "/experience/3",
-		"description": "项目是为美国提供的手机ALCATEL ONE TOUCH安卓版本。",
-		"zhize": "负责CI/CD，为开发和测试提供版本发布、流程自动化。",
+		"description": "项目是为美国的手机ALCATEL ONE TOUCH安卓版本。",
+		"zhize": "负责CI/CD，为开发和测试版本发布、流程自动化。",
 		"result": "",
 		"images": [],
 		"stack": [

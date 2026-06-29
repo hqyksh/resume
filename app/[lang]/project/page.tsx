@@ -26,7 +26,7 @@ const ProjectPage = async ({
   const content = dict.project;
   
   return (
-    <div className="lg:w-2/3 px-5 lg:px-0 mx-auto mb-15">
+    <div className="lg:w-2/3 px-5 lg:px-0 mx-auto mb-15 overflow-hidden">
        <div className="flex flex-col gap-3 mb-10">
         <Heading>{path?.title}</Heading>
         <FramerWrapper y={0} x={200}>
@@ -60,9 +60,9 @@ const ProjectPage = async ({
                   {
                     item.url ? <div className="font-bold text-lg text-gray-600"><LocaleLink href={item.url} target='_blank'>{item.company}</LocaleLink></div> : <div className="font-bold text-lg text-gray-600">{item.company}</div>
                   }
-                  <div className="text-2xl">{item.title}</div>
+                  <div className="text-2xl word-break wrap-break-word">{item.title}</div>
                 
-                  <div className='mt-2'>{item.description}</div>
+                  <div className='mt-2 word-break wrap-break-word'>{item.description}</div>
                   
                   {
                     item.zhize.length ? <div className="mt-5 text-lg">
@@ -96,7 +96,7 @@ const ProjectPage = async ({
                   }
 
                   {
-                    item.images.length ? <div className="mt-5 ml-12">
+                    item.images.length ? <div className="mt-5 xl:ml-12 xl:mr-12">
                       <Slide images={item.images} />
                     </div> : null
                   }

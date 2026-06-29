@@ -2,11 +2,11 @@
   "home": {
     "header": {
       "name": "Eric Zhou",
-      "usp": "Full Stack AI Agent Developer"
+      "usp": "Node.JS AI Agent Developer"
     },
     "intro": {
-      "start": "Before, I focused on UX and FED.",
-      "end": "Now, diving in AI Agent & full-stack development.",
+      "start": "Before, focused on UX and FED.",
+      "end": "Now, it's langchain AI Agent & full-stack Dev.",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
@@ -14,7 +14,7 @@
       "deleteDelay": 3000,
       "restartDelay": 12000
     },
-    "paragraph": "Full-stack TypeScript engineer. React/Vue, Node.js, Express, Next.js, and Node.js AI Agent development. Track record of shipping mini-programs, H5, Web, and enterprise management systems from scratch to scale.",
+    "paragraph": "Full-stack TypeScript engineer. Vue/React, Node.js, Express, Next.js, and Node.js AI Agent development. Building mini-programs, H5, Web, and enterprise management systems from scratch to scale.",
 
     "buttons": {
       "primary": "Contact Me",
@@ -43,9 +43,9 @@
   },
   "project": {
     "subTitle": "Project types include business management systems, h5, web, wechat mini programs, low-code site builder.",
-    "job": "Responsibilities",
+    "job": "Features",
     "result": "Achievements",
-    "skill": "Skills & Tools"
+    "skill": "Tools"
   },
   "experience": {
     "subTitle": "Extensive experience in the internet industry, with a focus on internet information services.",
@@ -55,7 +55,7 @@
   },
   "experienceDetail": {
     "subTitle": "Common Technologies",
-    "subTitle1": "Skills & Tools",
+    "subTitle1": "Tools",
     "buttons": {
       "detail": "Visit Project"
     }

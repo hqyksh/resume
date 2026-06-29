@@ -5,8 +5,8 @@
      "usp": "Node.js全栈开发工程师"
     },
     "intro": {
-      "start": "Before, I focused on UX and FED.",
-      "end": "Now, I am passionate about AI Agent & full-stack development.",
+      "start": "Before, focused on UX and FED.",
+      "end": "Now, it's langchain AI Agent & full-stack Dev.",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
@@ -14,7 +14,7 @@
       "deleteDelay": 3000,
       "restartDelay": 12000
     },
-    "paragraph": "高级 JS/TS 全栈工程师，精通 Vue/React 前端及 Node.js/Express/next.js 后端开发，能从 0 到 1 独立交付产品。精通微信小程序、H5、Web、企业管理系统开发。掌握AI Agent开发。具备快速学习和问题解决能力。",
+    "paragraph": "高级 TS 全栈工程师，精通 Vue/React 前端及 Node.js/Express/next.js 后端开发，能从 0 到 1 独立交付产品。精通微信小程序、H5、Web、企业管理系统开发。掌握AI Agent开发。具备快速学习和问题解决能力。",
 
     "buttons": {
       "primary": "邮件联系",
@@ -43,7 +43,7 @@
   },
   "project": {
     "subTitle": "做过的前端/全栈项目。包括企业管理系统，H5， web，小程序，低代码开发平台，开发框架等。",
-    "job": "项目职责",
+    "job": "功能",
     "result": "项目业绩",
     "skill": "技能与工具"
   },

@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { ArrowDownToLine  } from "lucide-react";
 import { useTheme } from 'next-themes';
 import { PinContainer } from "@/components/animation/Pin";
-const num = Math.floor(Math.random() * 2);
 
 import { Dictionary } from '@/types';
 
@@ -16,11 +15,16 @@ export default function Hello({dict}: {dict: Dictionary}) {
 	const [, setTypingStatus] = useState('Initializing');
 	const content = dict.home;
 	const imgs = ["/bg2.jpg", "/bg3.jpg"]
+	const [bgIndex, setBgIndex] = useState(0);
 
 	useEffect(() => {
 		const isDarkMode = resolvedTheme === 'dark';
 		isDarkMode? setIsDarkMode(1): setIsDarkMode(0)
 	}, [resolvedTheme]);
+
+	useEffect(() => {
+		setBgIndex(Math.floor(Math.random() * 2));
+	}, []);
 
 	return (
 		<div className='relative text-white min-h-3/4 bg-white dark:bg-transparent'>
@@ -120,7 +124,7 @@ export default function Hello({dict}: {dict: Dictionary}) {
 					</PinContainer>
 				</div>
 			</div>
-			<Image src={imgs[num]} width={1280} height={850} alt='' className='absolute w-full h-full left-0 top-0 opacity-16 pointer-events-none' loading="lazy" quality={60} />
+			<Image src={imgs[bgIndex]} width={1280} height={850} alt='' className='absolute w-full h-full left-0 top-0 opacity-16 pointer-events-none' loading="lazy" quality={60} />
 		</div>
 	)
 }

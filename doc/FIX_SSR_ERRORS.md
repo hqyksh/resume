@@ -267,7 +267,7 @@ if (isBrowser()) {
 }
 ```
 
-### 4. 提供服务器端回退
+### 4. 服务器端回退
 
 ```typescript
 const [mounted, setMounted] = useState(false);

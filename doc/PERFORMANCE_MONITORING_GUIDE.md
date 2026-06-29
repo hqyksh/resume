@@ -226,7 +226,7 @@ export default function RootLayout({ children, params }) {
 
 ### 启用精确内存信息
 
-Chrome 需要特殊标志才能提供精确的内存信息：
+Chrome 需要特殊标志才能精确的内存信息：
 
 ```bash
 # Windows

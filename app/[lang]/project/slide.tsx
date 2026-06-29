@@ -28,7 +28,7 @@ export default function Slide({images} : {images: string[]}) {
         onClick={onClose}
       >
         <div
-          className="relative max-w-3xl w-[100vw] max-h-[100vh] flex items-center justify-center"
+          className="relative max-w-3xl w-screen max-h-screen flex items-center justify-center"
           onClick={e => e.stopPropagation()}
         >
           <button
@@ -89,7 +89,7 @@ export default function Slide({images} : {images: string[]}) {
                   <Image
                     width={800}
                     height={500}
-                    className='w-[100%] h-[280px] lg:h-[350px] object-contain object-center cursor-zoom-in'
+                    className='w-full h-65 lg:h-87.5 object-contain object-center cursor-zoom-in'
                     src={item}
                     alt=""
                     onClick={() => handleImgClick(item)}
@@ -99,8 +99,10 @@ export default function Slide({images} : {images: string[]}) {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <div className='hidden xl:block'>
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
       </Carousel>
 
       {/* Modal for image preview，仅在客户端渲染，避免 hydration 报错 */}

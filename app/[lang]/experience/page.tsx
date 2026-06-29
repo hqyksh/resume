@@ -39,7 +39,7 @@ const ExperiencePage = async ({
       {
         experienceList.map((item, index) => {
            return <LocaleLink key={index} href={`/experience/${item.id}?modal=true`}>
-            <div className="card bg-base-100 shadow-sm text-gray-800 h-[405px]">
+            <div className="card bg-base-100 shadow-sm text-gray-800 h-[405px] mb-4 md:mb-0">
               <figure className="relative h-[250px]">
                 <Image
                   fill
