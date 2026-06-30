@@ -5,8 +5,8 @@
       "usp": "Node.JS AI Agent Developer"
     },
     "intro": {
-      "start": "Before, focused on UX and FED.",
-      "end": "Now, it's langchain AI Agent & full-stack Dev.",
+      "start": "Previously, UX and FED.",
+      "end": "Now, LangChain AI Agent & full-stack developer.",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
