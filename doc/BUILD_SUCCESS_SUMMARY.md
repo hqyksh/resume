@@ -120,7 +120,7 @@ Unknown at rule: @property
 ### 最大的页面
 1. `/[lang]/blog` - 269 kB (包含搜索功能)
 2. `/[lang]/experience/[id]` - 229 kB (包含轮播图)
-3. `/[lang]/project` - 226 kB (项目展示)
+3. `/[lang]/project` - 226 kB (项目)
 4. `/[lang]` - 221 kB (首页)
 
 ### 优化建议

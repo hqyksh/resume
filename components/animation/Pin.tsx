@@ -14,26 +14,11 @@ export const PinContainer = ({
   containerClassName?: string;
 }) => {
   const [transform, setTransform] = useState(
-    "translate(-10%,-50%) rotateY(-35deg) scale(1.2)"
+    "translate(-50%,-50%) rotateY(-20deg) scale(1)"
   );
 
-  useEffect(() => {
-      const timer1 = setTimeout(() => {
-        setTransform("translate(-50%,-50%) rotateY(0deg) scale(1.2)");
-      }, 800);
-
-      const timer2 = setTimeout(() => {
-        setTransform("translate(-50%,-50%) rotateY(-20deg) scale(1)");
-      }, 2000);
-
-      return () => {
-        clearTimeout(timer1);
-        clearTimeout(timer2);
-      };
-  }, [])
-
   const onMouseEnter = () => {
-    setTransform("translate(-50%,-50%) rotateY(0deg) scale(1.2)");
+    setTransform("translate(-50%,-50%) rotateY(0deg) scale(1.04)");
   };
   const onMouseLeave = () => {
     setTransform("translate(-50%,-50%) rotateY(-20deg) scale(1)");
@@ -57,9 +42,10 @@ export const PinContainer = ({
       >
         <div
           style={{
+            transformOrigin: 'right center',
             transform: transform,
           }}
-          className="absolute z-1000 left-1/2 p-4 top-1/2 w-full h-2/3 flex justify-start items-start rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/10 group-hover/pin:border-white/20 transition duration-700 overflow-hidden bg-white/10 dark:bg-black/10 hover:bg-white/70 dark:hover:bg-black/70 " 
+          className="absolute z-1000 left-1/2 p-4 top-1/2 w-full h-125 flex justify-start items-start rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] border border-white/10 group-hover/pin:border-white/20 transition duration-700 overflow-hidden bg-white/10 dark:bg-black/10 hover:bg-white/70 dark:hover:bg-black/70 " 
         >
           <div className={cn(" relative z-50 w-full h-full ", className)}>{children}</div>
         </div>

@@ -47,8 +47,6 @@ export default function Slide({images} : {images: string[]}) {
               style={{
                 maxWidth: '100vw',
                 maxHeight: '100vh',
-                width: 'auto',
-                height: 'auto',
                 display: 'block',
                 margin: '0 auto',
               }}
