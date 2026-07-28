@@ -14,7 +14,7 @@
       "deleteDelay": 3000,
       "restartDelay": 12000
     },
-    "paragraph": "Full-stack TypeScript engineer. Vue/React, Node.js, Express, Next.js, and Node.js AI Agent development. Building mini-programs, H5, Web, and enterprise management systems from scratch to scale.",
+    "paragraph": "Full-stack TypeScript engineer. Vue/React, Node.js, Express, Next.js, and langchain.js development. Building mini-programs, H5, Web, and enterprise management systems from scratch to scale.",
 
     "buttons": {
       "primary": "Contact Me",
