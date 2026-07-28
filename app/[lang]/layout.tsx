@@ -6,6 +6,7 @@ import ModalWrapper from "@/components/modal-wrapper";
 import { ThemeProvider } from "next-themes"
 import { getDictionary } from "@/dictionaries";
 import ProgressBarProvider from "@/components/ProgressBarProvider";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 
 
@@ -57,6 +58,7 @@ export default async function RootLayout({
           </main>
           <Footer dict={dict} />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
