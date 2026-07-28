@@ -44,6 +44,102 @@
 		"linkId": "dlkf"
 	},
 	{
+		"time": "2022-2024年",
+		"title": "搭建低代码开发平台",
+		"company": "成都华栖云科技有限公司",
+		"url": "/experience/1",
+		"description": "项目使用Vue2开发的低代码，组件化，拖拽式网页生成平台。",
+		"zhize": [
+			"负责该平台的数据源功能，事件绑定功能，组件开发模板构建，自定义样式功能等；",
+			"实现多页面站点管理，页面静态化发布等；",
+			"负责基础组件如空组件，文本组件，多列组件，登录组件，代码组件等的开发。"
+		],
+		"result": [
+			"已属于低代码平台专利《一种基于数据源的低代码可视化方法》",
+			"申请低代码静态化发布功能专利《一种可视化低代码平台页面静态化实现方法》。",
+			"使cms内容站点前台开发周期缩减50%+。"
+		],
+		"images": [
+			"/project/9.jpg",
+			"/project/5.jpg",
+			"/project/6.jpg",
+			"/project/8.jpg"
+		],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/nodejs-original.svg",
+				"name": "Node.js"
+			},
+			{
+				"icon": "/icons/css3-original.svg",
+				"name": "CSS3"
+			}
+		],
+		"linkId": "hqy"
+	},
+	{
+		"time": "2023-2024年",
+		"title": "使用低代码开发平台开发项目",
+		"company": "成都华栖云科技有限公司",
+		"url": "/experience/1",
+		"description": "",
+		"zhize": [
+			"1、使用低代码平台快速搭建湖北日报4个pc端，4个移动端CMS站点。",
+			"2、使用低代码平台部署陕西党建网专题开发系统。",
+			"3、使用低代码平台搭建某海军新媒体中心pc端站点。后台一系列资源管理系统定制化修改。"
+		],
+		"result": [],
+		"images": [
+			"/project/1.jpg",
+			"/project/2.jpg",
+			"/project/3.jpg",
+			"/project/4.jpg",
+			"/project/7.jpg"
+		],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue2"
+			},
+			{
+				"icon": "/icons/hqylogo.jpeg",
+				"name": "Lowcode site builder"
+			},
+			{
+				"icon": "/icons/css3-original.svg",
+				"name": "CSS3"
+			},
+			{
+				"icon": "/icons/react-original.svg",
+				"name": "React"
+			}
+		]
+	},
+	{
+		"time": "2024年",
+		"title": "北京电视台新闻采编，任务分配，审核发布管理系统",
+		"company": "成都华栖云科技有限公司",
+		"url": "/experience/1",
+		"description": "基于小诺框架开发，新闻采编及任务进度管理系统。",
+		"zhize": "任务日历模式，任务脑图模式，任务新建，通义听悟语音会议记录，任务审核功能等。",
+		"result": "",
+		"images": [],
+		"stack": [
+			{
+				"icon": "/icons/vuejs-original.svg",
+				"name": "Vue3"
+			},
+			{
+				"icon": "/icons/empty.svg",
+				"name": "AntDesign-Vue"
+			}
+		]
+	},
+	{
 		"time": "2025年",
 		"title": "团建分账小程序“团建分账大师“",
 		"company": "独立全栈开发",
@@ -342,102 +438,6 @@
 			{
 				"icon": "/icons/LogosNginx.svg",
 				"name": "Nginx"
-			}
-		]
-	},
-	{
-		"time": "2022-2024年",
-		"title": "搭建低代码开发平台",
-		"company": "成都华栖云科技有限公司",
-		"url": "/experience/1",
-		"description": "项目使用Vue2开发的低代码，组件化，拖拽式网页生成平台。",
-		"zhize": [
-			"负责该平台的数据源功能，事件绑定功能，组件开发模板构建，自定义样式功能等；",
-			"实现多页面站点管理，页面静态化发布等；",
-			"负责基础组件如空组件，文本组件，多列组件，登录组件，代码组件等的开发。"
-		],
-		"result": [
-			"已属于低代码平台专利《一种基于数据源的低代码可视化方法》",
-			"申请低代码静态化发布功能专利《一种可视化低代码平台页面静态化实现方法》。",
-			"使cms内容站点前台开发周期缩减50%+。"
-		],
-		"images": [
-			"/project/9.jpg",
-			"/project/5.jpg",
-			"/project/6.jpg",
-			"/project/8.jpg"
-		],
-		"stack": [
-			{
-				"icon": "/icons/vuejs-original.svg",
-				"name": "Vue2"
-			},
-			{
-				"icon": "/icons/nodejs-original.svg",
-				"name": "Node.js"
-			},
-			{
-				"icon": "/icons/css3-original.svg",
-				"name": "CSS3"
-			}
-		],
-		"linkId": "hqy"
-	},
-	{
-		"time": "2023-2024年",
-		"title": "使用低代码开发平台开发项目",
-		"company": "成都华栖云科技有限公司",
-		"url": "/experience/1",
-		"description": "",
-		"zhize": [
-			"1、使用低代码平台快速搭建湖北日报4个pc端，4个移动端CMS站点。",
-			"2、使用低代码平台部署陕西党建网专题开发系统。",
-			"3、使用低代码平台搭建某海军新媒体中心pc端站点。后台一系列资源管理系统定制化修改。"
-		],
-		"result": [],
-		"images": [
-			"/project/1.jpg",
-			"/project/2.jpg",
-			"/project/3.jpg",
-			"/project/4.jpg",
-			"/project/7.jpg"
-		],
-		"stack": [
-			{
-				"icon": "/icons/vuejs-original.svg",
-				"name": "Vue2"
-			},
-			{
-				"icon": "/icons/hqylogo.jpeg",
-				"name": "Lowcode site builder"
-			},
-			{
-				"icon": "/icons/css3-original.svg",
-				"name": "CSS3"
-			},
-			{
-				"icon": "/icons/react-original.svg",
-				"name": "React"
-			}
-		]
-	},
-	{
-		"time": "2024年",
-		"title": "北京电视台新闻采编，任务分配，审核发布管理系统",
-		"company": "成都华栖云科技有限公司",
-		"url": "/experience/1",
-		"description": "基于小诺框架开发，新闻采编及任务进度管理系统。",
-		"zhize": "任务日历模式，任务脑图模式，任务新建，通义听悟语音会议记录，任务审核功能等。",
-		"result": "",
-		"images": [],
-		"stack": [
-			{
-				"icon": "/icons/vuejs-original.svg",
-				"name": "Vue3"
-			},
-			{
-				"icon": "/icons/empty.svg",
-				"name": "AntDesign-Vue"
 			}
 		]
 	},
