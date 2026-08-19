@@ -2,11 +2,11 @@
   "home": {
     "header": {
      "name": "Eric Zhou",
-     "usp": "Node.js全栈开发工程师"
+     "usp": "Vue.js & Node.js 全栈开发"
     },
     "intro": {
-      "start": "Previously, UX and FED.",
-      "end": "Now, LangChain AI Agent & full-stack developer.",
+      "start": "10年+前端开发经验。",
+      "end": "2年Node.js开发经验。",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
@@ -14,7 +14,7 @@
       "deleteDelay": 3000,
       "restartDelay": 12000
     },
-    "paragraph": "高级 TS 全栈工程师，精通 Vue/React 前端框架及 Node.js/Express/next.js 后端开发，从 0 到 1 独立交付产品。精通微信小程序、H5、Web、企业管理系统开发。熟悉langchain开发。具备快速学习和解决问题能力。",
+    "paragraph": "高级前端开发工程师，精通 Vue.js 前端框架，熟悉 React，精通微信小程序、H5、Web、企业管理系统开发。熟悉 Node.js / Express / next.js 后端开发，能参与全栈开发交付。",
 
     "buttons": {
       "primary": "邮件联系",
@@ -24,13 +24,13 @@
     "title": "技术栈",
     "preTitle": "技术工具与语言",
     "subTitle": "专注于体验，专注Node.js全栈工程。",
-    "title1": "博客列表",
-    "subTitle1": "历史WP博客，使用supabase存储数据。",
+    "title1": "历史博客",
+    "subTitle1": "使用supabase存储数据。",
     "project": "最近项目",
 		"descriptionTitle": "可视化低代码开发平台",
     "programmingTitle": "编程语言",
     "frameworkTitle": "框架 / 库",
-    "toolsTitle": "工具 & 技术"
+    "toolsTitle": "工具 / 技术"
   },
   "education": {
     "subTitle": "四川农业大学 2006/9-2010/6 电子商务 211统招本科",

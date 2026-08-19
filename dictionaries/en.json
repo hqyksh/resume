@@ -2,11 +2,11 @@
   "home": {
     "header": {
       "name": "Eric Zhou",
-      "usp": "Node.js AI Agent Developer"
+      "usp": "Vue.js & Node.js Developer"
     },
     "intro": {
-      "start": "Previously, UX and FED.",
-      "end": "Now, LangChain AI Agent & full-stack developer.",
+      "start": "Ten years+ of experience in FED.",
+      "end": "Two years of Node.js developer.",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
@@ -14,7 +14,7 @@
       "deleteDelay": 3000,
       "restartDelay": 12000
     },
-    "paragraph": "Full-stack TypeScript engineer. Vue/React, Node.js, Express, Next.js, and langchain.js development. Building mini-programs, H5, Web, and enterprise management systems from scratch to scale.",
+    "paragraph": "Proficient in Vue.js, Familiar with React, Node.js, Express, Next.js. Proficient in Wechat mini-programs, H5, Web, and enterprise management systems development.",
 
     "buttons": {
       "primary": "Contact Me",
@@ -24,13 +24,13 @@
     "title": "Stack Used",
     "preTitle": "Tools, Platform & Lanuage",
     "subTitle": "Focused on user experience and dedicated to Node.js full-stack engineering.",
-    "title1": "Blog List",
-    "subTitle1": "Historical WP blog, using Supabase for data storage.",
+    "title1": "Historical blog",
+    "subTitle1": "Using Supabase for data storage.",
     "project": "Recently Project",
-		"descriptionTitle": "Visual low-code site builder",
+		"descriptionTitle": "Visual Low-Code Site Builder",
     "programmingTitle": "Programming Languages",
     "frameworkTitle": "Framework / Libraries",
-    "toolsTitle": "Tools & Technologies"
+    "toolsTitle": "Tools / Technologies"
   },
   "education": {
     "subTitle": "Sichuan Agricultural University | Sep 2006 – Jun 2010  Bachelor’s Degree, E-Commerce.",
