@@ -2,6 +2,7 @@ import React from 'react'
 import FramerWrapper from "@/components/animation/FramerWrapper";
 import Heading from "@/components/Heading";
 import project from '@/content/project.json';
+import experienceList from '@/content/experience.json';
 import { Metadata } from "next";
 import Slide from './slide';
 import LocaleLink from '@/components/LocaleLink';
@@ -13,6 +14,27 @@ export const metadata: Metadata = {
   title: "project page",
   description: 'This is a portfolio page about Ethen Zhou, contain experience blog project etc.'
 };
+
+// 通过 linkId 或 url(/experience/N) 在 experience.json 中查找对应公司的 logo
+function getCompanyImage(item: { linkId?: string; url?: string }): string | null {
+  // 1. 通过 linkId 匹配 experience.link
+  if (item.linkId) {
+    const exp = (experienceList as Array<{ link?: string; logo: string }>)
+      .find(e => e.link === item.linkId);
+    if (exp && exp.logo && !exp.logo.includes('empty')) return exp.logo;
+  }
+  // 2. 通过 url 中的 id 匹配 experience.id
+  if (item.url) {
+    const m = item.url.match(/\/experience\/(\d+)/);
+    if (m) {
+      const id = Number(m[1]);
+      const exp = (experienceList as Array<{ id: number; logo: string }>)
+        .find(e => e.id === id);
+      if (exp && exp.logo && !exp.logo.includes('empty')) return exp.logo;
+    }
+  }
+  return null;
+}
 
 const ProjectPage = async ({
   params
@@ -40,6 +62,9 @@ const ProjectPage = async ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {project.map((item, index) => {
           const hasImages = item.images && item.images.length > 0;
+          // 无项目截图时，回退到对应公司的 logo 图
+          const companyImage = hasImages ? null : getCompanyImage(item);
+          const heroImages = hasImages ? item.images : (companyImage ? [companyImage] : []);
           return (
             <FramerWrapper
               key={index}
@@ -52,10 +77,10 @@ const ProjectPage = async ({
                 className="overflow-hidden h-full flex flex-col gap-0 py-0 scroll-mt-24 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
               >
                 {/* 图片展示区 - 首要展示 */}
-                {hasImages ? (
-                  <Slide images={item.images} />
+                {heroImages.length > 0 ? (
+                  <Slide images={heroImages} />
                 ) : (
-                  <div className="aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center p-6">
+                  <div className="aspect-[16/10] bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center p-6">
                     <div className="flex flex-wrap gap-4 justify-center max-w-md">
                       {item.stack.map((st, i) => (
                         <div key={i} className="flex flex-col items-center gap-2 opacity-70">
@@ -146,7 +171,7 @@ const ProjectPage = async ({
 
                   {/* 技术栈 - 置底 */}
                   {item.stack.length ? (
-                    <div className="flex flex-wrap gap-x-4 gap-y-2 pt-3 mt-auto border-t">
+                    <div className="flex flex-wrap gap-x-4 gap-y-2 pt-6 mt-auto border-t">
                       {item.stack.map((st, i) => (
                         <div key={i} className="flex items-center gap-1.5">
                           {st.icon ? (

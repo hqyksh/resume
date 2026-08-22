@@ -94,7 +94,7 @@ export default function Slide({images} : {images: string[]}) {
         <CarouselContent>
           {images.map((item, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full aspect-[4/3] bg-muted/30 dark:bg-black/20 overflow-hidden">
+              <div className="relative w-full aspect-[16/10] bg-muted/30 dark:bg-black/20 overflow-hidden">
                 <Image
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
