@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import Slide from './slide';
 import LocaleLink from '@/components/LocaleLink';
 import Image from 'next/image';
+import { Card, CardContent } from "@/components/ui/card";
 import { getDictionary } from '@/dictionaries';
 
 export const metadata: Metadata = {
@@ -24,10 +25,10 @@ const ProjectPage = async ({
   const navLinks = dict.navLink;
   const path = navLinks.find((item: { path: string; }) => item.path === '/project')
   const content = dict.project;
-  
+
   return (
     <div className="lg:w-2/3 px-5 lg:px-0 mx-auto mb-15 overflow-hidden">
-       <div className="flex flex-col gap-3 mb-10">
+      <div className="flex flex-col gap-3 mb-10">
         <Heading>{path?.title}</Heading>
         <FramerWrapper y={0} x={200}>
           <p className="font-poppins text-lg w-full max-sm:text-base">
@@ -36,98 +37,138 @@ const ProjectPage = async ({
         </FramerWrapper>
       </div>
 
-      <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical mb-16">
-        {
-          project.map((item, index) => {
-            return (
-              <li key={index} className="text-black dark:text-white">
-                <div id={item.linkId} className='mt-[-200]'></div>
-                <div className="timeline-middle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="h-6 w-6"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <div className="timeline-end mb-10">
-                  {
-                    item.url ? <div className="font-bold text-lg text-gray-600"><LocaleLink href={item.url} target='_blank'>{item.company}</LocaleLink></div> : <div className="font-bold text-lg text-gray-600">{item.company}</div>
-                  }
-                  <div className="text-2xl word-break wrap-break-word">{item.title}</div>
-                
-                  <div className='mt-2 word-break wrap-break-word'>{item.description}</div>
-                  
-                  {
-                    item.zhize.length ? <div className="mt-5 text-lg">
-                      <div className="font-bold pt-2 text-gray-600 text-xl">{content.job}</div>
-                      { Array.isArray(item.zhize) ? 
-                        <ul>
-                          {
-                            item.zhize.length ? item.zhize.map((zz, index) => {
-                              return <li key={index}>{zz}</li>
-                            }) : null
-                          }
-                        </ul> : item.zhize
-                      }
-                    </div> : null
-                  }
-                  
-
-                  {
-                    item.result.length ? <div className="mt-5">
-                    <div className="font-bold pt-2 text-gray-600 text-xl">{content.result}</div>
-                    { Array.isArray(item.result) ? 
-                      <ul>
-                        {
-                          item.result.length ? item.result.map((rt, index) => {
-                            return <li key={index}>{rt}</li>
-                          }) : null
-                        }
-                      </ul> : item.result
-                    }
-                  </div> : null
-                  }
-
-                  {
-                    item.images.length ? <div className="mt-5 xl:ml-12 xl:mr-12">
-                      <Slide images={item.images} />
-                    </div> : null
-                  }
-                  
-                  {
-                    item.stack.length ? <div className="mt-5">
-                    <div className="font-bold pt-2 text-gray-600 text-xl">{content.skill}</div>
-                    <div className="flex gap-10 py-4 pb-8 flex-wrap">
-                        {item.stack.map((st, index) => {
-                          return <div key={index}>
-                            { st.icon ? <Image
-                              width={28}
-                              height={28}
-                              className='md:w-8 h-8 mx-auto'
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        {project.map((item, index) => {
+          const hasImages = item.images && item.images.length > 0;
+          return (
+            <FramerWrapper
+              key={index}
+              y={30}
+              delay={Math.min(index * 0.05, 0.4)}
+              className="h-full"
+            >
+              <Card
+                id={item.linkId}
+                className="overflow-hidden h-full flex flex-col gap-0 py-0 scroll-mt-24 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+              >
+                {/* 图片展示区 - 首要展示 */}
+                {hasImages ? (
+                  <Slide images={item.images} />
+                ) : (
+                  <div className="aspect-[4/3] bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 flex items-center justify-center p-6">
+                    <div className="flex flex-wrap gap-4 justify-center max-w-md">
+                      {item.stack.map((st, i) => (
+                        <div key={i} className="flex flex-col items-center gap-2 opacity-70">
+                          {st.icon ? (
+                            <Image
                               src={st.icon}
-                              alt={st.name} /> : null}
-                            <p>{st.name}</p>
-                          </div>
-                        })}
+                              alt={st.name}
+                              width={36}
+                              height={36}
+                              className="w-9 h-9"
+                            />
+                          ) : null}
+                          <span className="text-xs text-muted-foreground">{st.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* 内容区 */}
+                <CardContent className="p-5 lg:p-6 flex flex-col gap-3 flex-1">
+                  {/* 顶部：公司 + 时间 */}
+                  <div className="flex items-center justify-between gap-2 text-xs">
+                    {item.url ? (
+                      <LocaleLink
+                        href={item.url}
+                        target='_blank'
+                        className="text-sky-600 dark:text-sky-400 font-medium hover:underline"
+                      >
+                        {item.company}
+                      </LocaleLink>
+                    ) : (
+                      <span className="text-muted-foreground font-medium">{item.company}</span>
+                    )}
+                    <span className="text-muted-foreground">{item.time}</span>
+                  </div>
+
+                  {/* 标题 */}
+                  <h3 className="text-lg lg:text-xl font-bold leading-snug word-break wrap-break-word">
+                    {item.title}
+                  </h3>
+
+                  {/* 描述 */}
+                  {item.description ? (
+                    <p className="text-sm text-muted-foreground leading-relaxed word-break wrap-break-word">
+                      {item.description}
+                    </p>
+                  ) : null}
+
+                  {/* 职责 */}
+                  {item.zhize.length ? (
+                    <div className="space-y-2">
+                      <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                        {content.job}
                       </div>
-                  </div> : null
-                  }
-                  
-                </div>
-                <hr />
-              </li>
-            )
-          })
-        }
-        
-      </ul>
+                      {Array.isArray(item.zhize) ? (
+                        <ul className="space-y-1.5 text-sm text-muted-foreground">
+                          {item.zhize.map((zz, i) => (
+                            <li key={i} className="flex gap-2 leading-relaxed">
+                              <span className="text-sky-500 mt-1 flex-shrink-0">•</span>
+                              <span>{zz}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-sm text-muted-foreground leading-relaxed">{item.zhize}</p>
+                      )}
+                    </div>
+                  ) : null}
+
+                  {/* 成果 - 高亮显示 */}
+                  {item.result.length ? (
+                    <div className="space-y-2 p-3 rounded-lg bg-sky-50 dark:bg-sky-950/30">
+                      <div className="text-xs font-semibold uppercase tracking-wider text-sky-700 dark:text-sky-300">
+                        {content.result}
+                      </div>
+                      {Array.isArray(item.result) ? (
+                        <ul className="space-y-1 text-sm">
+                          {item.result.map((rt, i) => (
+                            <li key={i} className="leading-relaxed">{rt}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-sm leading-relaxed">{item.result}</p>
+                      )}
+                    </div>
+                  ) : null}
+
+                  {/* 技术栈 - 置底 */}
+                  {item.stack.length ? (
+                    <div className="flex flex-wrap gap-x-4 gap-y-2 pt-3 mt-auto border-t">
+                      {item.stack.map((st, i) => (
+                        <div key={i} className="flex items-center gap-1.5">
+                          {st.icon ? (
+                            <Image
+                              src={st.icon}
+                              alt={st.name}
+                              width={16}
+                              height={16}
+                              className="w-4 h-4"
+                            />
+                          ) : null}
+                          <span className="text-xs text-muted-foreground">{st.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  ) : null}
+                </CardContent>
+              </Card>
+            </FramerWrapper>
+          );
+        })}
+      </div>
     </div>
   );
 };

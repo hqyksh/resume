@@ -1,10 +1,9 @@
 "use client"
 
 import React, { useState } from 'react'
-import dynamic from 'next/dynamic';
+import { createPortal } from 'react-dom'
 import Image from 'next/image';
 
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,
@@ -13,54 +12,67 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+type ImgSize = { width: number; height: number } | null;
+
+function ImageModal({
+  show,
+  onClose,
+  img,
+  imgSize
+}: {
+  show: boolean;
+  onClose: () => void;
+  img: string | null;
+  imgSize: ImgSize;
+}) {
+  // 仅在客户端且确实需要展示时才挂载到 body，避免 SSR 报错
+  if (!show || !img || !imgSize || typeof document === 'undefined') return null;
+
+  // 通过 Portal 把 Modal 渲染到 body，脱离 Card 的 DOM 层级
+  // 否则 Card 的 hover:transform 会作为 modal position:fixed 的 containing block，导致 modal 尺寸/位置抖动
+  return createPortal(
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <div
+        className="relative max-w-3xl w-screen max-h-screen flex items-center justify-center"
+        onClick={e => e.stopPropagation()}
+      >
+        <button
+          className="absolute top-2 right-2 text-white bg-black/60 rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/80 z-10"
+          onClick={onClose}
+          aria-label="关闭"
+        >
+          ×
+        </button>
+        <Image
+          src={img}
+          alt="preview"
+          width={imgSize.width}
+          height={imgSize.height}
+          style={{
+            maxWidth: '100vw',
+            maxHeight: '100vh',
+            display: 'block',
+            margin: '0 auto',
+          }}
+          className="object-contain rounded shadow-lg"
+          priority
+        />
+      </div>
+    </div>,
+    document.body
+  );
+}
 
 export default function Slide({images} : {images: string[]}) {
   const [showModal, setShowModal] = useState(false);
   const [currentImg, setCurrentImg] = useState<string | null>(null);
-  const [imgSize, setImgSize] = useState<{ width: number; height: number } | null>(null);
-
-  // 动态导入 Modal 组件，ssr: false
-  const Modal = dynamic(() => Promise.resolve(({ show, onClose, img, imgSize }: { show: boolean, onClose: () => void, img: string | null, imgSize: { width: number; height: number } | null }) => {
-    if (!show) return null;
-    return (
-      <div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
-        onClick={onClose}
-      >
-        <div
-          className="relative max-w-3xl w-screen max-h-screen flex items-center justify-center"
-          onClick={e => e.stopPropagation()}
-        >
-          <button
-            className="absolute top-2 right-2 text-white bg-black/60 rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/80"
-            onClick={onClose}
-            aria-label="关闭"
-          >
-            ×
-          </button>
-          {img && imgSize && (
-            <Image
-              src={img}
-              alt="preview"
-              width={imgSize.width}
-              height={imgSize.height}
-              style={{
-                maxWidth: '100vw',
-                maxHeight: '100vh',
-                display: 'block',
-                margin: '0 auto',
-              }}
-              className="object-contain rounded shadow-lg"
-              priority
-            />
-          )}
-        </div>
-      </div>
-    );
-  }), { ssr: false });
+  const [imgSize, setImgSize] = useState<ImgSize>(null);
 
   const handleImgClick = (img: string) => {
-    // 动态获取图片原始宽高
+    // 动态获取图片原始宽高，浏览器会缓存该图，避免 modal 闪烁
     const image = new window.Image();
     image.src = img;
     image.onload = () => {
@@ -78,22 +90,20 @@ export default function Slide({images} : {images: string[]}) {
 
   return (
     <>
-      <Carousel className="bg-transparent border-0">
+      <Carousel className="bg-transparent border-0 w-full">
         <CarouselContent>
           {images.map((item, index) => (
             <CarouselItem key={index}>
-              <Card>
-                <CardContent className="flex flex-col items-center justify-center p-0">
-                  <Image
-                    width={800}
-                    height={500}
-                    className='w-full h-65 lg:h-87.5 object-contain object-center cursor-zoom-in'
-                    src={item}
-                    alt=""
-                    onClick={() => handleImgClick(item)}
-                  />
-                </CardContent>
-              </Card>
+              <div className="relative w-full aspect-[4/3] bg-muted/30 dark:bg-black/20 overflow-hidden">
+                <Image
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-contain object-center cursor-zoom-in"
+                  src={item}
+                  alt={`project-image-${index}`}
+                  onClick={() => handleImgClick(item)}
+                />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -103,9 +113,7 @@ export default function Slide({images} : {images: string[]}) {
         </div>
       </Carousel>
 
-      {/* Modal for image preview，仅在客户端渲染，避免 hydration 报错 */}
-      <Modal show={showModal} onClose={handleClose} img={currentImg} imgSize={imgSize} />
+      <ImageModal show={showModal} onClose={handleClose} img={currentImg} imgSize={imgSize} />
     </>
   );
 }
-
