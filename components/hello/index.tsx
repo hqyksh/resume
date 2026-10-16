@@ -16,6 +16,8 @@ export default function Hello({dict}: {dict: Dictionary}) {
 	const content = dict.home;
 	const imgs = ["/bg2.jpg", "/bg3.jpg"]
 	const [bgIndex, setBgIndex] = useState(0);
+	// 背景是否已完成随机选择：挂载前保持透明，挂载后淡入，避免 SSR 固定首图造成的水合不一致与闪烁
+	const [bgReady, setBgReady] = useState(false);
 
 	useEffect(() => {
 		const isDarkMode = resolvedTheme === 'dark';
@@ -23,7 +25,8 @@ export default function Hello({dict}: {dict: Dictionary}) {
 	}, [resolvedTheme]);
 
 	useEffect(() => {
-		setBgIndex(Math.floor(Math.random() * 2));
+		setBgIndex(Math.floor(Math.random() * imgs.length));
+		setBgReady(true);
 	}, []);
 
 	return (
@@ -68,10 +71,10 @@ export default function Hello({dict}: {dict: Dictionary}) {
 						</a>
 						
 						<a
-							href="/icons/ericzhou-fullstack-developer.pdf"
+							href="/icons/Ericzhou-fullstack-developer.pdf"
 							target="_blank"
 							download
-							className="flex flex-1 sm:flex-none items-center justify-center bg-white text-gray-800 border-2 dark:border-gray-800 border-gray-400 rounded-4xl py-3 px-12 font-bold hover:bg-gray-50 cursor-pointer active:ring-blue-600 active:ring-2  hover:-translate-y-1 transition-all duration-150 ease-in-out hover:shadow-md"
+							className="flex flex-1 sm:flex-none items-center justify-center bg-white text-gray-800 border dark:border-gray-800 border-gray-400 rounded-4xl py-3 px-12 font-bold hover:bg-gray-50 cursor-pointer active:ring-blue-600 active:ring-2  hover:-translate-y-1 transition-all duration-150 ease-in-out hover:shadow-md"
 						>
 							<ArrowDownToLine />{content.buttons.secondary}
 						</a>
@@ -124,7 +127,7 @@ export default function Hello({dict}: {dict: Dictionary}) {
 					</PinContainer>
 				</div>
 			</div>
-			<Image src={imgs[bgIndex]} width={1280} height={850} alt='' className='absolute w-full h-full left-0 top-0 opacity-16 pointer-events-none' loading="lazy" quality={60} />
+			<Image src={imgs[bgIndex]} width={1280} height={850} alt='' className={`absolute w-full h-full left-0 top-0 pointer-events-none transition-opacity duration-700 ${bgReady ? 'opacity-16' : 'opacity-0'}`} loading="lazy" quality={60} />
 		</div>
 	)
 }

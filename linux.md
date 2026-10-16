@@ -8,7 +8,7 @@ tar -czf app.tar.gz ./standalone/
 
 sudo tar -xzf app.tar.gz
 
-ssh -p 2222 -i resumekey.pem ubuntu@47.129.237.106
+ssh -p 2222 -i resumekey.pem ubuntu@47/tmp.129.237.106
 scp -P 2222 -i resumekey.pem app.tar.gz ubuntu@47.129.237.106:/tmp
 
 
@@ -155,6 +155,8 @@ PORT=3000 HOSTNAME=0.0.0.0 node server.js
 方式2
 cd .next/standalone
 pm2 start server.js --name next-app
+
+pm2 start npm --name next-app -- run start
 
 cd .next/standalone
 NODE_OPTIONS="--max-old-space-size=384" pm2 start server.js --name next-app

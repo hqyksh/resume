@@ -6,7 +6,7 @@
     },
     "intro": {
       "start": "Ten years+ of experience in FED.",
-      "end": "Two years of Node.js development experience.",
+      "end": "Three years of Node.js development experience.",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
@@ -65,9 +65,26 @@
     "buttons": {
       "detail": "Visit Detail",
       "search": "search",
+      "write": "Write",
       "result": "No Result",
       "pre": "Previous",
       "next": "Next"
+    },
+    "writeModal": {
+      "title": "Write a New Post",
+      "postTitle": "Title",
+      "postTitlePlaceholder": "Enter the post title",
+      "postContent": "Content",
+      "postContentPlaceholder": "Supports Markdown, e.g. # heading, **bold**, - list, ``` code block",
+      "adminCode": "Admin Code",
+      "adminCodePlaceholder": "Enter the admin code",
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "success": "Post saved successfully",
+      "errorEmpty": "Title and content are required",
+      "errorCode": "Invalid admin code",
+      "errorNetwork": "Save failed, please try again later"
     }
   },
   "footer": {

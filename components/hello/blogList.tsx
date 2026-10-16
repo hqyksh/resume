@@ -29,7 +29,7 @@ export default function BlogList({dict}: {dict: Dictionary}) {
       const query = supabase
         .from('post_previews')
         .select('*', { count: 'exact' })
-        .order('post_date', { ascending: false })
+        .order('id', { ascending: false })
         .limit(itemsPerPage);
 
       const { data, error } = await query;

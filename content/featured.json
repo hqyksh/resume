@@ -18,10 +18,6 @@
 				"name": "TypeScript"
 			},
 			{
-				"icon": "/icons/LogosPython.svg",
-				"name": "python"
-			},
-			{
 				"icon": "/icons/LogosBash.svg",
 				"name": "shell"
 			}

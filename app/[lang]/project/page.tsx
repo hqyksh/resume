@@ -1,6 +1,5 @@
 import React from 'react'
 import FramerWrapper from "@/components/animation/FramerWrapper";
-import Heading from "@/components/Heading";
 import project from '@/content/project.json';
 import experienceList from '@/content/experience.json';
 import { Metadata } from "next";
@@ -44,15 +43,12 @@ const ProjectPage = async ({
   const { lang } = await params as { lang: 'en' | 'zh' };
   const dict = await getDictionary(lang as 'en' | 'zh');
 
-  const navLinks = dict.navLink;
-  const path = navLinks.find((item: { path: string; }) => item.path === '/project')
   const content = dict.project;
 
   return (
     <div className="lg:w-2/3 px-5 lg:px-0 mx-auto mb-15 overflow-hidden">
       <div className="flex flex-col gap-3 mb-10">
-        <Heading>{path?.title}</Heading>
-        <FramerWrapper y={0} x={200}>
+        <FramerWrapper y={0} x={200} className="mt-8">
           <p className="font-poppins text-lg w-full max-sm:text-base">
             {content.subTitle}
           </p>

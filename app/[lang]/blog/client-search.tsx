@@ -12,8 +12,10 @@ import {
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
+import { PenSquare } from 'lucide-react';
 import ProjectCards from "@/components/ProjectsCard";
 import { createClient } from "@/lib/supabase/client";
+import WritePostModal from './WritePostModal';
 const supabase = createClient();
 
 export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
@@ -25,6 +27,7 @@ export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
   const [currentPage, setCurrentPage] = useState(page);
   const [totalPages, setTotalPages] = useState(20);
   const [inputValue, setInputValue] = useState('');
+  const [writeOpen, setWriteOpen] = useState(false);
   const itemsPerPage = 15;
   // 用于取消上一次 fetch 请求
   const abortRef = useRef<AbortController | null>(null);
@@ -42,7 +45,7 @@ export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
       const query = supabase
         .from('post_previews')
         .select('*', { count: 'exact' })
-        .order('post_date', { ascending: false })
+        .order('id', { ascending: false })
         .range(start, start + itemsPerPage - 1);
 
       const { data, count, error } = await query;
@@ -167,6 +170,10 @@ export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
         <Button type="submit" variant="outline" className="cursor-pointer active:bg-gray-400" onClick={() => handleSearch(1)}>
           {dict?.buttons.search}
         </Button>
+        <Button className="cursor-pointer gap-1.5" onClick={() => setWriteOpen(true)}>
+          <PenSquare size={16} />
+          {dict?.buttons.write}
+        </Button>
       </div>
       
       {loading ? (
@@ -217,6 +224,13 @@ export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
           </PaginationItem>
         </PaginationContent>
       </Pagination>
+
+      <WritePostModal
+        open={writeOpen}
+        dict={dict?.writeModal}
+        onClose={() => setWriteOpen(false)}
+        onSuccess={() => fetchBooks(currentPage)}
+      />
     </div>
   );
 }

@@ -32,7 +32,7 @@ const Navbar = ({dict}: {dict: Dictionary}) => {
 
   return (
     <nav className="fixed mx-auto border-b dark:border-[#33353F] border-gray-200 top-0 left-0 right-0 bg-gray-100 dark:bg-[#121212] bg-opacity-100 z-20">
-      <div className="flex min-h-[76px] flex-wrap items-center justify-between mx-auto px-8 pr-4 max-w-645">
+      <div className="flex min-h-14 lg:min-h-[76px] flex-wrap items-center justify-between mx-auto px-8 pr-4 max-w-645">
         <LocaleLink
           href="/"
           className="text-3xl dark:text-white text-gray-800 font-semibold logo-name"

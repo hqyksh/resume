@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 @plugin "daisyui";
+@plugin "@tailwindcss/typography";
 
 .name_underline::after{
   content: "";

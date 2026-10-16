@@ -14,7 +14,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const maxWidth = 800;
 
 function Resume({content}: {content: any}) {
-  const [file] = useState("/icons/ericzhou-fullstack-developer.pdf");
+  const [file] = useState("/icons/Ericzhou-fullstack-developer.pdf");
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerWidth, setContainerWidth] = useState(maxWidth);
 

@@ -6,7 +6,7 @@
     },
     "intro": {
       "start": "10年+前端开发经验。",
-      "end": "2年Node.js开发经验。",
+      "end": "3年Node.js开发经验。",
       "speed": 60,
       "deletionSpeed": 80,
       "wrapper": "h2",
@@ -65,9 +65,26 @@
     "buttons": {
       "detail": "查看详情",
       "search": "搜索",
+      "write": "写文章",
       "result": "未找到内容",
       "pre": "上一页",
       "next": "下一页"
+    },
+    "writeModal": {
+      "title": "写新文章",
+      "postTitle": "标题",
+      "postTitlePlaceholder": "请输入文章标题",
+      "postContent": "内容",
+      "postContentPlaceholder": "支持 Markdown 语法，如 # 标题、**加粗**、- 列表、``` 代码块",
+      "adminCode": "管理员码",
+      "adminCodePlaceholder": "请输入管理员码",
+      "save": "保存",
+      "saving": "保存中...",
+      "cancel": "取消",
+      "success": "文章保存成功",
+      "errorEmpty": "标题和内容不能为空",
+      "errorCode": "管理员码错误",
+      "errorNetwork": "保存失败，请稍后重试"
     }
   },
   "footer": {

@@ -51,7 +51,7 @@ export default async function RootLayout({
           <ProgressBarProvider />
           <Navbar dict={dict} />
           <main>
-            <div className="pt-[76px] text-white">
+            <div className="pt-[57px] lg:pt-[77px] text-white">
               {children}
               <ModalWrapper modal={modal} />
             </div>

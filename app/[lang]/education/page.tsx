@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import FramerWrapper from "@/components/animation/FramerWrapper";
-import Heading from "@/components/Heading";
 import { Metadata } from "next";
 import { getDictionary } from '@/dictionaries/index';
 import { SchoolImage } from "./schoolImage";
@@ -19,15 +18,12 @@ const EducationPage = async ({
   const { lang } = await params as { lang: 'en' | 'zh' };
   const dict = await getDictionary(lang as 'en' | 'zh');
 
-  const navLinks = dict.navLink;
-  const path = navLinks.find((item: { path: string; }) => item.path === '/education')
   const content = dict.education;
 
   return (
-    <div className="lg:w-2/3 px-5 lg:px-0 mx-auto min-h-[calc(100vh-100px)] p-5">
+    <div className="lg:w-2/3 px-5 lg:px-0 mx-auto min-h-[calc(100vh-100px)]">
       <div className="flex flex-col gap-3 mb-10">
-        <Heading>{path?.title}</Heading>
-        <FramerWrapper y={0} x={200}>
+        <FramerWrapper y={0} x={200} className="mt-8">
           <p className="font-poppins text-lg w-full max-sm:text-base flex items-center gap-2">
             {/* <Image 
               src="/school/scnydxlogo.png" 

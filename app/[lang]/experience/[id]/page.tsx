@@ -9,7 +9,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import LocaleLink from '@/components/LocaleLink';
 import FramerWrapper from "@/components/animation/FramerWrapper";
-import Heading from "@/components/Heading";
 
 import Autoplay from "embla-carousel-autoplay"
 import { Card, CardContent } from "@/components/ui/card"
@@ -45,15 +44,14 @@ export default function ProjectDetailPage() {
   return (
     <div className="lg:w-3/5 lg:px-0 xl:w-2/3 mx-auto mb-15 pt-5 px-5 text-black dark:text-white " onClick={e => e.stopPropagation()}>
       <div className="flex flex-col gap-3">
-        <Heading>{data?.subTitle}</Heading>
-        <FramerWrapper y={0} x={200}>
+        <FramerWrapper y={0} x={200} className="mt-8">
           <p className=" font-poppins text-lg w-full max-sm:text-base">
             {p.title}
           </p>
         </FramerWrapper>
       </div>
 
-      <div className="block sm:flex justify-end pb-8 pr-2 mt-4 sm:-mt-5">
+      <div className="block sm:flex justify-end pb-8 pr-2 mt-4">
         <LocaleLink href={`/project#${p.link}`}
           className={cn(
             buttonVariants({

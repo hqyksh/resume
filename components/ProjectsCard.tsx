@@ -13,14 +13,11 @@ import LocaleLink from '@/components/LocaleLink';
 
 const ProjectCards: React.FC<any> = ({ value, num, dict }) => {
   return (
-    <FramerWrapper 
-      className="md:w-1/2 xl:w-1/3 px-2 mb-4" 
-      y={0} 
-      scale={0.8} 
-      delay={num/4} 
-      duration={0.1}
+    <FramerWrapper
+      className="md:w-1/2 xl:w-1/3 px-2 mb-4"
+      delay={Math.min(num * 0.05, 0.3)}
     >
-      <Card className="w-full h-full flex flex-col shadow-none hover:shadow-lg transition-all duration-300 border-2">
+      <Card className="w-full h-full flex flex-col shadow-none hover:shadow-lg transition-all duration-300 border">
         <CardHeader className="pb-2">
           <CardTitle className="text-xl font-bold text-primary break-all">
             <LocaleLink href={`/blog/${value.id}`} target="_blank"><span dangerouslySetInnerHTML={{ __html: value.post_title }}></span></LocaleLink>

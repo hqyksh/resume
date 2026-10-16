@@ -12,7 +12,7 @@ export default function Resume({content}: {content: any}) {
       <Container fluid className="resume-section pt-10">
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <a
-          href="/icons/ericzhou-fullstack-developer.pdf"
+          href="/icons/Ericzhou-fullstack-developer.pdf"
           target="_blank"
           download
           style={{ maxWidth: "250px" }}
@@ -28,7 +28,7 @@ export default function Resume({content}: {content: any}) {
       </Suspense>
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <a
-          href="/icons/ericzhou-fullstack-developer.pdf"
+          href="/icons/Ericzhou-fullstack-developer.pdf"
           target="_blank"
           download
           style={{ maxWidth: "250px" }}
