@@ -36,7 +36,7 @@ export const SchoolImage = () => {
     }, []);
 
     return (
-        <div className="relative w-full h-[200px] sm:h-[400px] md:h-[455px]">
+        <div className="relative w-full aspect-[16/7] xl:aspect-[16/10]">
             {imgs.map((src, i) => (
                 <Image
                     key={src}

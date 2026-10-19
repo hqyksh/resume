@@ -47,29 +47,8 @@ export default function FeaturedProject({ content, contentLang, index }: {
     >
       <div className="flex flex-col gap-2 shrink pb-10">
         <div className=" gap-2 min-h-4/5">
-        
-          <div className="block xl:hidden">
-            <div className="flex items-center gap-2">
-              <div className="text-2xl mb-2">{project}</div>
-            </div>
-            <div className="lg:text-3xl text-xl">
-              <p>
-                {descriptionTitle}
-              </p>
-            </div>
-
-            <Image
-              width={1920}
-              height={868}
-              alt="school view"
-              style={{ objectFit: 'fill' }} 
-              src="/project/1.jpg"
-              className="w-full h-full object-contain object-center mt-4"
-            />
-          </div>
-          
           <div className="flex1">
-            <div className="mt-8 lg:mt-4">
+            <div className="mt-2">
               <div className="text-2xl mb-5">{programmingTitle}</div>
               <Badges
                 list={programming}

@@ -11,7 +11,7 @@ export async function generateMetadata({ params } : { params: Promise<{id: strin
 
 const ArticleDetail = async ({ params } : { params: Promise<{id: string}>}) => {
   const resolvedParams = await params;
-  return <BlogDetailClient id={resolvedParams.id} />;
+  return <div className="min-h-screen flex"><BlogDetailClient id={resolvedParams.id} /></div>;
 };
 
 export default ArticleDetail;

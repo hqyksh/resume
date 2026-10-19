@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
 import { ArrowDownToLine  } from "lucide-react";
 import { useTheme } from 'next-themes';
-import { PinContainer } from "@/components/animation/Pin";
+import { motion, AnimatePresence } from 'framer-motion';
 
 import { Dictionary } from '@/types';
 
@@ -15,7 +15,9 @@ export default function Hello({dict}: {dict: Dictionary}) {
 	const [, setTypingStatus] = useState('Initializing');
 	const content = dict.home;
 	const imgs = ["/bg2.jpg", "/bg3.jpg"]
+	const projectImgs = [1, 2, 3, 4];
 	const [bgIndex, setBgIndex] = useState(0);
+	const [imgIndex, setImgIndex] = useState(0);
 	// 背景是否已完成随机选择：挂载前保持透明，挂载后淡入，避免 SSR 固定首图造成的水合不一致与闪烁
 	const [bgReady, setBgReady] = useState(false);
 
@@ -29,10 +31,15 @@ export default function Hello({dict}: {dict: Dictionary}) {
 		setBgReady(true);
 	}, []);
 
+	useEffect(() => {
+		const timer = setInterval(() => setImgIndex((prev) => (prev + 1) % projectImgs.length), 4000);
+		return () => clearInterval(timer);
+	}, []);
+
 	return (
 		<div className='relative text-white min-h-3/4 bg-white dark:bg-transparent'>
-			<div className='relative z-10 mx-auto lg:w-4/5 max-w-625 sm:px-16 px-5 lg:px-0 flex flex-col lg:flex-row items-center gap-8'>
-				<div className='flex-2 pb-16'>
+			<div className='relative z-10 mx-auto lg:w-4/5 max-w-625 sm:px-16 px-5 lg:px-0 flex flex-col xl:flex-row items-center gap-8'>
+				<div className='flex-2 xl:pb-16 pb-2'>
 					<div className="h-[100]">
 					<TypeAnimation key={isDarkMode} className={isDarkMode ? "text-white text-xl my-2 w-full pt-10" : "text-gray-800 lg:text-xl text-md my-2 w-full pt-10 min-h-17"}
 						sequence={[
@@ -80,51 +87,44 @@ export default function Hello({dict}: {dict: Dictionary}) {
 						</a>
 					</section>
 				</div>
-				<div className="flex-3 shrink-0 hidden xl:flex items-center justify-center h-[88vh] ">
-					<PinContainer>
-						<figure className="hover-gallery w-full h-full">
-							<Image
-								width={1920}
-								height={868}
-								alt="school view"
-								style={{ objectFit: 'fill' }} 
-								src="/project/1.jpg"
-								className="w-full h-full object-contain object-center"
-								loading="lazy"
-								quality={75}
+				<div className="flex-3 w-full flex flex-col items-center justify-center">
+					<div className="group relative w-full aspect-[16/7] xl:aspect-[16/10] overflow-hidden mt-6 mb-3">
+						<AnimatePresence initial={false}>
+							<motion.div
+								key={imgIndex}
+								initial={{ opacity: 0, scale: 1.05 }}
+								animate={{ opacity: 1, scale: 1 }}
+								exit={{ opacity: 0 }}
+								transition={{ duration: 0.6, ease: 'easeInOut' }}
+								className="absolute xl:inset-0"
+							>
+								<motion.div
+									whileHover={{ scale: 0.95 }}
+									transition={{ duration: 0.4, ease: 'easeInOut' }}
+									className="w-full h-full"
+								>
+									<Image
+										width={1920}
+										height={868}
+										alt="project screenshot"
+										src={`/project/${projectImgs[imgIndex]}.jpg`}
+										className="w-full h-full object-contain xl:object-cover transition-all duration-500 group-hover:object-contain"
+										quality={80}
+									/>
+								</motion.div>
+							</motion.div>
+						</AnimatePresence>
+					</div>
+					<div className="flex justify-center gap-2 mt-2 mb-5">
+						{projectImgs.map((n, i) => (
+							<button
+								key={n}
+								aria-label={`project ${n}`}
+								onClick={() => setImgIndex(i)}
+								className={`h-2 w-8 cursor-pointer ring-1 ring-black/30 transition-all duration-300 ${i === imgIndex ? 'bg-blue-600 ring-blue-600' : 'bg-white hover:bg-gray-200'}`}
 							/>
-							<Image
-								width={1920}
-								height={868}
-								alt="school view"
-								style={{ objectFit: 'fill' }} 
-								src="/project/2.jpg"
-								className="w-full h-full object-contain object-center"
-								loading="lazy"
-								quality={75}
-							/>
-							<Image
-								width={1920}
-								height={868}
-								alt="school view"
-								style={{ objectFit: 'fill' }} 
-								src="/project/3.jpg"
-								className="w-full h-full object-contain object-center"
-								loading="lazy"
-								quality={75}
-							/>
-							<Image
-								width={1920}
-								height={868}
-								alt="school view"
-								style={{ objectFit: 'fill' }} 
-								src="/project/4.jpg"
-								className="w-full h-full object-contain object-center"
-								loading="lazy"
-								quality={75}
-							/>
-						</figure>
-					</PinContainer>
+						))}
+					</div>
 				</div>
 			</div>
 			<Image src={imgs[bgIndex]} width={1280} height={850} alt='' className={`absolute w-full h-full left-0 top-0 pointer-events-none transition-opacity duration-700 ${bgReady ? 'opacity-16' : 'opacity-0'}`} loading="lazy" quality={60} />

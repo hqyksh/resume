@@ -21,7 +21,7 @@ const EducationPage = async ({
   const content = dict.education;
 
   return (
-    <div className="lg:w-2/3 px-5 lg:px-0 mx-auto min-h-[calc(100vh-100px)]">
+    <div className="lg:w-2/3 px-5 lg:px-0 mx-auto min-h-[calc(100vh-125px)]">
       <div className="flex flex-col gap-3 mb-10">
         <FramerWrapper y={0} x={200} className="mt-8">
           <p className="font-poppins text-lg w-full max-sm:text-base flex items-center gap-2">

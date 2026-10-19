@@ -177,7 +177,7 @@ export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
       </div>
       
       {loading ? (
-        <div className="w-full text-center h-[350px] pt-16"><span className="loading loading-spinner loading-xl"></span></div>
+        <div className="w-full text-center min-h-[calc(100vh-407px)] pt-16"><span className="loading loading-spinner loading-xl"></span></div>
       ) : (
         books.length ? (
           <div className="md:flex w-full min-h-[280px] flex-row flex-wrap">
@@ -208,7 +208,7 @@ export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
               <PaginationLink
                 onClick={() => handlePageChange(p)}
                 isActive={currentPage === p}
-                className={`cursor-pointer ${currentPage === p ? 'text-gray-800' : ''}`}
+                className={`cursor-pointer ${currentPage === p ? 'text-blue-700' : ''}`}
               >
                 {p}
               </PaginationLink>

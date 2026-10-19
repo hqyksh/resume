@@ -36,16 +36,8 @@ function ImageModal({
       onClick={onClose}
     >
       <div
-        className="relative max-w-3xl w-screen max-h-screen flex items-center justify-center"
-        onClick={e => e.stopPropagation()}
+        className="relative max-w-3xl w-screen max-h-screen flex items-center justify-center cursor-zoom-out"
       >
-        <button
-          className="absolute top-2 right-2 text-white bg-black/60 rounded-full w-8 h-8 flex items-center justify-center hover:bg-black/80 z-10"
-          onClick={onClose}
-          aria-label="关闭"
-        >
-          ×
-        </button>
         <Image
           src={img}
           alt="preview"

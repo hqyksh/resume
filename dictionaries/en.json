@@ -14,11 +14,11 @@
       "deleteDelay": 3000,
       "restartDelay": 12000
     },
-    "paragraph": "Proficient in Vue.js related frameworks, Familiar with React, JavaScript, HTML5, CSS3, Node.js, Express, Next.js. Proficient in Wechat mini-programs, H5, Web, and enterprise management systems development.",
+    "paragraph": "Proficient in React, JavaScript, HTML5, CSS3, Node.js, Sequelize, Express, and Next.js. Familiar in H5, Web, and enterprise management systems development.",
 
     "buttons": {
       "primary": "Contact Me",
-      "secondary": "Download CV"
+      "secondary": "Download Resume"
     },
 
     "title": "Stack Used",
@@ -29,8 +29,8 @@
     "project": "Recently Project",
 		"descriptionTitle": "Visual Low-Code Site Builder",
     "programmingTitle": "Programming Languages",
-    "frameworkTitle": "Framework / Libraries",
-    "toolsTitle": "Tools / Technologies"
+    "frameworkTitle": "Libraries",
+    "toolsTitle": "Tools"
   },
   "education": {
     "subTitle": "Sichuan Agricultural University | Sep 2006 – Jun 2010  Bachelor’s Degree, E-Commerce.",
