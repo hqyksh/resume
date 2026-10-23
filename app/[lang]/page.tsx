@@ -6,8 +6,8 @@ import { Metadata } from 'next';
 import { getDictionary } from "@/dictionaries";
 
 export const metadata: Metadata = {
-  title: "Eric Zhou's portfolio page",
-  description: 'This is a portfolio page about Eric Zhou, contain experience blog project etc.'
+  title: "Evan Zhou's portfolio page",
+  description: 'This is a portfolio page about Evan Zhou, contain experience blog project etc.'
 };
 
 export default async function Home({params}: {

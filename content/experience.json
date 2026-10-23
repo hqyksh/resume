@@ -49,10 +49,6 @@
         "name": "Node.js"
       },
       {
-        "icon": "/icons/LogosPinia.svg",
-        "name": "Pinia"
-      },
-      {
         "icon": "/icons/css3-original.svg",
         "name": "CSS3"
       },

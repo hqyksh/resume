@@ -8,7 +8,7 @@ import experienceList from '@/content/experience.json';
 
 export const metadata: Metadata = {
   title: "project page",
-  description: 'This is a portfolio page about Eric Zhou, contain experience blog project etc.'
+  description: 'This is a portfolio page about Evan Zhou, contain experience blog project etc.'
 };
 
 const ExperiencePage = async ({

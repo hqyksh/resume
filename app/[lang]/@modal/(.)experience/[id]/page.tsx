@@ -23,8 +23,13 @@ import { getDictionary } from "@/dictionaries";
 
 export default function ProjectDetailPage () {
   const params = useParams();
-  const p = experienceList.find(item => item.id == Number(params.id))!
+  const idNum = Number(params.id);
+  const p = isNaN(idNum) ? null : experienceList.find(item => item.id === idNum) ?? null;
   const [data, setData] = useState<any>(null);
+
+  if (!p) {
+    return null;
+  }
 
   useEffect(() => {
     async function fetchData() {
@@ -60,7 +65,7 @@ export default function ProjectDetailPage () {
                     <Image
                       width={800}
                       height={500}
-                      className='w-[100%] h-[180px] lg:h-[250px] object-contain object-center'
+                      className='w-[100%] h-[180px] lg:h-[48vh] object-contain object-center'
                       src={item}
                       alt=""
                       />

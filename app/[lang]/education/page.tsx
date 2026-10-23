@@ -7,7 +7,7 @@ import { SchoolImage } from "./schoolImage";
 
 export const metadata: Metadata = {
   title: "education page",
-  description: 'This is a portfolio page about Eric Zhou, contain experience blog project etc.'
+  description: 'This is a portfolio page about Evan Zhou, contain experience blog project etc.'
 };
 
 const EducationPage = async ({

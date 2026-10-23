@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import DOMPurify from 'dompurify';
 import { createClient } from '@/lib/supabase/client';
 
 type Post = {
@@ -34,6 +35,7 @@ const BlogDetailClient = ({ id }: { id: string }) => {
         } else {
           setPost(data as Post);
           setStatus('ready');
+          document.title = data.post_title;
         }
       });
 
@@ -73,7 +75,7 @@ const BlogDetailClient = ({ id }: { id: string }) => {
           ) : (
             <div
               className="leading-8 post_content min-h-[80vh]"
-              dangerouslySetInnerHTML={{ __html: post.post_content }}
+              dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.post_content) }}
             />
           )}
         </div>

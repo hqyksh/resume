@@ -20,7 +20,8 @@ const supabase = createClient();
 
 export const ClientSearch = ({lang, dict}: {lang: string; dict: any}) => {
   const params = useSearchParams();
-  const page = Number(params.get('page')) || 1;
+  const rawPage = Number(params.get('page'));
+  const page = Number.isFinite(rawPage) && rawPage > 0 ? rawPage : 1;
   const router = useRouter();
   const [books, setBooks] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);

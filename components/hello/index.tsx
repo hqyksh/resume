@@ -78,7 +78,7 @@ export default function Hello({dict}: {dict: Dictionary}) {
 						</a>
 						
 						<a
-							href="/icons/Ericzhou-fullstack-developer.pdf"
+							href="/icons/Evanzhou-fullstack-developer.pdf"
 							target="_blank"
 							download
 							className="flex flex-1 sm:flex-none items-center justify-center bg-white text-gray-800 border dark:border-gray-800 border-gray-400 rounded-4xl py-3 px-12 font-bold hover:bg-gray-50 cursor-pointer active:ring-blue-600 active:ring-2  hover:-translate-y-1 transition-all duration-150 ease-in-out hover:shadow-md"

@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eric Zhou - Full Stack Developer Portfolio",
-  description: "Personal portfolio showcasing projects, experience, and blog posts by Eric Zhou",
+  title: "Evan Zhou - Full Stack Developer Portfolio",
+  description: "Personal portfolio showcasing projects, experience, and blog posts by Evan Zhou",
 };
 
 export default async function RootLayout({

@@ -37,7 +37,7 @@ const Navbar = ({dict}: {dict: Dictionary}) => {
           href="/"
           className="text-3xl dark:text-white text-gray-800 font-semibold logo-name"
         >
-          Eric Zhou
+          Evan Zhou
         </LocaleLink>
         
         <div className="menu hidden lg:block lg:w-auto" id="navbar">

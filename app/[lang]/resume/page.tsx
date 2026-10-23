@@ -4,7 +4,7 @@ import { getDictionary } from "@/dictionaries";
 
 export const metadata: Metadata = {
   title: "download resume page",
-  description: 'This is a portfolio page about Eric Zhou, contain experience blog project etc.'
+  description: 'This is a portfolio page about Evan Zhou, contain experience blog project etc.'
 };
 
 export default async function ResumePage({

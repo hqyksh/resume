@@ -6,7 +6,7 @@ import { getDictionary } from "@/dictionaries";
 
 export const metadata: Metadata = {
   title: "blog page",
-  description: 'This is a portfolio page about Eric Zhou, contain experience blog project etc.'
+  description: 'This is a portfolio page about Evan Zhou, contain experience blog project etc.'
 };
 
 const BlogPage = async ({

@@ -24,7 +24,16 @@ import { getDictionary } from "@/dictionaries";
 export default function ProjectDetailPage() {
   const params = useParams();
   const [data, setData] = useState<any>(null);
-  const p = experienceList.find(item => item.id == Number(params.id))!
+  const idNum = Number(params.id);
+  const p = isNaN(idNum) ? null : experienceList.find(item => item.id === idNum) ?? null;
+
+  if (!p) {
+    return (
+      <div className="container mx-auto py-24 lg:w-2/3 px-8 lg:px-0 text-center text-gray-500">
+        404
+      </div>
+    );
+  }
 
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
